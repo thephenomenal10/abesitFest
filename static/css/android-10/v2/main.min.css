@@ -1,3 +1,32 @@
+.des-card {
+    width: 18%;
+    background-color: #1b191e;
+    border-radius: 10px;
+    margin: 0 25px 0 25px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    transition: 0.25s ease-in-out;
+    padding-top: 60px;
+}
+
+.Contact-div .Cards-div {
+    /* margin-top: 2vh;
+  width: 100%;
+  height: 70vh; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-column-start: col-2;
+    grid-column-end: col-3;
+    grid-row-start: row-1;
+    grid-row-end: row-3;
+    transition: 0.3s ease-in-out;
+}
+
+
 /* .............gradient for cover page.......... */
 
 #sahyog {
@@ -641,7 +670,7 @@ span.hs {
     color: #000;
     font: 700 2.5rem/2.5rem "Android Euclid", Helvetica, Arial, sans-serif;
     letter-spacing: -.0625rem;
-    transition: color .3s linear
+    transition: color .3s linear;
 }
 
 .cta--is-3>.cta__icon {
@@ -650,7 +679,7 @@ span.hs {
     transition: -webkit-transform .3s linear;
     transition: transform .3s linear;
     transition: transform .3s linear, -webkit-transform .3s linear;
-    width: 24px
+    width: 24px;
 }
 
 .cta--is-3>.cta__external {
