@@ -6,7 +6,14 @@
 
 <head>
     <link rel="shortcut icon" href="favicon.png">
-
+    <script>
+        var viewMode = getCookie("view-mode");
+        if (viewMode == "desktop") {
+            viewport.setAttribute('content', 'width=1024');
+        } else if (viewMode == "mobile") {
+            viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+        }
+    </script>
     <script>
         window.dataLayer = window.dataLayer || [];
     </script>
@@ -29,8 +36,9 @@
     </script>
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
     <title>Festin-O-Beats-2019</title>
-    <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+    <!-- <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport"> -->
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
 
 
@@ -2772,26 +2780,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </li>
                 </ul>
 
-
-                <!-- drwer secondary items -->
-                <!-- <ul class="header-default__secondary"><li class="header-default__secondary-item">
-                  <a href="https://www.android.com/enterprise/"
-    class="cta cta--is-3"      data-g-config="{'eventLabel': 'android enterprise', 'moduleName': 'header', 'linkUrl': '/enterprise/', 'eventCategory': 'navigation', 'title': 'menu item'}"
->Android Enterprise<svg class="icon--svg cta__icon" aria-hidden="true">
-    <use xlink:href="#ico-arrow-large"></use>
-  </svg></a>
-
-
-          </li><li class="header-default__secondary-item">
-                  <a href="https://developer.android.com/"
-    class="cta cta--is-3"      target="_blank"
-      rel="noopener"
-      data-g-config="{'eventLabel': 'android developers', 'moduleName': 'header', 'linkUrl': 'https://developer.android.com/', 'eventCategory': 'navigation', 'title': 'menu item'}"
->Android Developers<svg class="icon--svg cta__icon cta__external" aria-hidden="true">
-    <use xlink:href="#ico-arrow-large"></use>
-  </svg></a>
-
-     </li></ul> -->
                 <div class="header-default__language">
 
                     <form class="language-selector" data-android-component="language-selector"> <svg class="icon--svg language-selector__globe" aria-hidden="true">
@@ -2901,348 +2889,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         </section>
 
-        <!-- ------------------cover page material End-------------- -->
-
-        <!-- the code of cover page of site in next section      -->
-        <!-- <section
-          id="android-10"
-        class="hero-devices"
-        data-android-component="hero-devices"
-        data-android-component-animation="q-hero">
-      <div class="hero-devices__wrapper grid">
-        <div class="hero-devices__copy-wrapper">
-            <h1 class="is-7">Android 10</h1>
-            <div
-      data-android-component="rotating-heading"
-      data-android-component-config="{&#34;waitToRotate&#34;: 2, &#34;isInfinite&#34;: false, &#34;timeout&#34;: 1200}"
-      class="rotating-heading hero-devices__heading"
-      aria-label="Help when you want it."
-      role="heading"
-      aria-level="2">
-
-    <ul class="rotating-heading__headings" aria-hidden="true">
-          <li style="--heading-index: 0" class="rotating-heading__heading">
-
-            <div class="rotating-heading__title is-2">
-              <span style="--heading-index: 0; --animation-order: 0" class="rotating-heading__animated">Help</span>
-              <span style="--heading-index: 0; --animation-order: 0" class="rotating-heading__animated">when</span>
-            </div>
-          </li>
-          <li style="--heading-index: 1" class="rotating-heading__heading">
-
-            <div class="rotating-heading__title is-2">
-              <span style="--heading-index: 1; --animation-order: 0" class="rotating-heading__animated">Focus</span>
-              <span style="--heading-index: 1; --animation-order: 0" class="rotating-heading__animated">when</span>
-            </div>
-          </li>
-          <li style="--heading-index: 2" class="rotating-heading__heading">
-
-            <div class="rotating-heading__title is-2">
-              <span style="--heading-index: 2; --animation-order: 0" class="rotating-heading__animated">Dark</span>
-              <span style="--heading-index: 2; --animation-order: 0" class="rotating-heading__animated">when</span>
-            </div>
-          </li>
-          <li style="--heading-index: 3" class="rotating-heading__heading">
-
-            <div class="rotating-heading__title is-2">
-              <span style="--heading-index: 3; --animation-order: 0" class="rotating-heading__animated">Just</span>
-              <span style="--heading-index: 3; --animation-order: 0" class="rotating-heading__animated">the</span>
-              <span style="--heading-index: 3; --animation-order: 0" class="rotating-heading__animated">way</span>
-            </div>
-          </li>
-    </ul>
-    <div class="rotating-heading__fixed-heading is-2" aria-hidden="true">you want it.</div>
-  </div>
-
-
-        </div>
-            <div
-                class="hero-devices__image-wrapper hero-devices__image-container-1"
-                style="--device-order: 0">
-                        <img
-    src="9ea495ce1f5c8fb0bea6e4205e2a602b.jpg"
-    alt="Collage of Android 10 features on multiple different devices"     width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <noscript>
-        <img
-      src="D:\thegadgetgyan.com\airtel.jpeg"
-      srcset="https://lh3.googleusercontent.com/0jpEpPmdV_-h6mnxRozT876XmY7xYaFr7641ueHZW6qgN9VLl8wiMnKlVKDKhCWw8fDst-l3Gx7DdPRfIpnKp3KR9QSMkJN-6LVpnKA=w281-v3 281w,https://lh3.googleusercontent.com/0jpEpPmdV_-h6mnxRozT876XmY7xYaFr7641ueHZW6qgN9VLl8wiMnKlVKDKhCWw8fDst-l3Gx7DdPRfIpnKp3KR9QSMkJN-6LVpnKA=w190-v3 190w,https://lh3.googleusercontent.com/0jpEpPmdV_-h6mnxRozT876XmY7xYaFr7641ueHZW6qgN9VLl8wiMnKlVKDKhCWw8fDst-l3Gx7DdPRfIpnKp3KR9QSMkJN-6LVpnKA=w201-v3 201w,"
-      sizes="(min-width: 1440px) 281px,(min-width: 1000px) 190px,(min-width: 600px) 201px,"
-      alt="Collage of Android 10 features on multiple different devices"
-    >
-      </noscript>
-  </cloud-image>
-
-
-
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/qbltoJOFjwk-f0DDshheW6xindJFQqk9LY2sRjh4472GYdE2m0jA1rqbqM0TrGeBEuSCyq62CnlbMLIpoqn1q1JZJ6pMmLykaS58xPo"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-1 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <img src="https://lh3.googleusercontent.com/qbltoJOFjwk-f0DDshheW6xindJFQqk9LY2sRjh4472GYdE2m0jA1rqbqM0TrGeBEuSCyq62CnlbMLIpoqn1q1JZJ6pMmLykaS58xPo=w320" alt="Collage of Android 10 features on multiple different devices">
-  </cloud-image>
-
-
-
-            </div>
-            <div
-                class="hero-devices__image-wrapper hero-devices__image-container-2"
-                style="--device-order: 1">
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/slMKIdDpRDzpTeFCPeJJczucXgKrqISj59oerk_0hEBvMQy-eOniykG-Yu3cCwQquUb3zB121_Q3QbbK2Dzz4yQyPjwUhnuVJe8O"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-0 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/slMKIdDpRDzpTeFCPeJJczucXgKrqISj59oerk_0hEBvMQy-eOniykG-Yu3cCwQquUb3zB121_Q3QbbK2Dzz4yQyPjwUhnuVJe8O=w150-v3"
-      srcset="https://lh3.googleusercontent.com/slMKIdDpRDzpTeFCPeJJczucXgKrqISj59oerk_0hEBvMQy-eOniykG-Yu3cCwQquUb3zB121_Q3QbbK2Dzz4yQyPjwUhnuVJe8O=w281-v3 281w,https://lh3.googleusercontent.com/slMKIdDpRDzpTeFCPeJJczucXgKrqISj59oerk_0hEBvMQy-eOniykG-Yu3cCwQquUb3zB121_Q3QbbK2Dzz4yQyPjwUhnuVJe8O=w190-v3 190w,https://lh3.googleusercontent.com/slMKIdDpRDzpTeFCPeJJczucXgKrqISj59oerk_0hEBvMQy-eOniykG-Yu3cCwQquUb3zB121_Q3QbbK2Dzz4yQyPjwUhnuVJe8O=w201-v3 201w,"
-      sizes="(min-width: 1440px) 281px,(min-width: 1000px) 190px,(min-width: 600px) 201px,"
-      alt="Collage of Android 10 features on multiple different devices"
-    >
-      </noscript>
-  </cloud-image>
-
-
-
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/cSL-pbyX55ioG6Q6S1-ZtwDyr7kvMPkXpyjR4ECs2SszGzjNT9XOGxipJkIEDR4EtfE538AqOi14K7DcVP82Duju0zz_3vvWSGRnBg"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-1 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <img src="https://lh3.googleusercontent.com/cSL-pbyX55ioG6Q6S1-ZtwDyr7kvMPkXpyjR4ECs2SszGzjNT9XOGxipJkIEDR4EtfE538AqOi14K7DcVP82Duju0zz_3vvWSGRnBg=w320" alt="Collage of Android 10 features on multiple different devices">
-  </cloud-image>
-
-
-
-            </div>
-            <div
-                class="hero-devices__image-wrapper hero-devices__image-container-3"
-                style="--device-order: 2">
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/b-k02vys8arAF2Rgb6bXfdEuBIC5aOLT67bFKWUrgmSz1Kn1vIKlk6TCym6y_mcvDR3Xz-lOg36h5T64-Sle7TrMpnY6V6vka1w8ir8"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-0 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/b-k02vys8arAF2Rgb6bXfdEuBIC5aOLT67bFKWUrgmSz1Kn1vIKlk6TCym6y_mcvDR3Xz-lOg36h5T64-Sle7TrMpnY6V6vka1w8ir8=w150-v3"
-      srcset="https://lh3.googleusercontent.com/b-k02vys8arAF2Rgb6bXfdEuBIC5aOLT67bFKWUrgmSz1Kn1vIKlk6TCym6y_mcvDR3Xz-lOg36h5T64-Sle7TrMpnY6V6vka1w8ir8=w281-v3 281w,https://lh3.googleusercontent.com/b-k02vys8arAF2Rgb6bXfdEuBIC5aOLT67bFKWUrgmSz1Kn1vIKlk6TCym6y_mcvDR3Xz-lOg36h5T64-Sle7TrMpnY6V6vka1w8ir8=w190-v3 190w,https://lh3.googleusercontent.com/b-k02vys8arAF2Rgb6bXfdEuBIC5aOLT67bFKWUrgmSz1Kn1vIKlk6TCym6y_mcvDR3Xz-lOg36h5T64-Sle7TrMpnY6V6vka1w8ir8=w201-v3 201w,"
-      sizes="(min-width: 1440px) 281px,(min-width: 1000px) 190px,(min-width: 600px) 201px,"
-      alt="Collage of Android 10 features on multiple different devices"
-    >
-      </noscript>
-  </cloud-image>
-
-
-
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/3yE26_8hqY6QiDzXsOAs_KihOe59fzD25-LkbOWgQs8rBPljQYA2udlZBNGsTEfwwteTXtYNaKr-G6-rNSL0c1l0eya7CAyzNxoDuF8"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-1 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <img src="https://lh3.googleusercontent.com/3yE26_8hqY6QiDzXsOAs_KihOe59fzD25-LkbOWgQs8rBPljQYA2udlZBNGsTEfwwteTXtYNaKr-G6-rNSL0c1l0eya7CAyzNxoDuF8=w320" alt="Collage of Android 10 features on multiple different devices">
-  </cloud-image>
-
-
-
-            </div>
-            <div
-                class="hero-devices__image-wrapper hero-devices__image-container-4"
-                style="--device-order: 3">
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/DF6okEummbestkkIcSZ6RSkmawbcVkQsH41g5CAbwkNfoUCIqGqEt_vp-z0P4PvTMk7UMBfDL-mfDwHadP1JNe7S-zMSGj4Y6Xmzig"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-0 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/DF6okEummbestkkIcSZ6RSkmawbcVkQsH41g5CAbwkNfoUCIqGqEt_vp-z0P4PvTMk7UMBfDL-mfDwHadP1JNe7S-zMSGj4Y6Xmzig=w150-v3"
-      srcset="https://lh3.googleusercontent.com/DF6okEummbestkkIcSZ6RSkmawbcVkQsH41g5CAbwkNfoUCIqGqEt_vp-z0P4PvTMk7UMBfDL-mfDwHadP1JNe7S-zMSGj4Y6Xmzig=w281-v3 281w,https://lh3.googleusercontent.com/DF6okEummbestkkIcSZ6RSkmawbcVkQsH41g5CAbwkNfoUCIqGqEt_vp-z0P4PvTMk7UMBfDL-mfDwHadP1JNe7S-zMSGj4Y6Xmzig=w190-v3 190w,https://lh3.googleusercontent.com/DF6okEummbestkkIcSZ6RSkmawbcVkQsH41g5CAbwkNfoUCIqGqEt_vp-z0P4PvTMk7UMBfDL-mfDwHadP1JNe7S-zMSGj4Y6Xmzig=w201-v3 201w,"
-      sizes="(min-width: 1440px) 281px,(min-width: 1000px) 190px,(min-width: 600px) 201px,"
-      alt="Collage of Android 10 features on multiple different devices"
-    >
-      </noscript>
-  </cloud-image>
-
-
-
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/YacerUGsMZFCkL5RPqTFtVuSfUXKXmC92QFNIjp_HdbBpdzMHUEipa4LeQvjhSTOjQDItOD9IRa7S-gmDuhcNrNOWvDzcbJA4eV1cFI"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-1 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <img src="https://lh3.googleusercontent.com/YacerUGsMZFCkL5RPqTFtVuSfUXKXmC92QFNIjp_HdbBpdzMHUEipa4LeQvjhSTOjQDItOD9IRa7S-gmDuhcNrNOWvDzcbJA4eV1cFI=w320" alt="Collage of Android 10 features on multiple different devices">
-  </cloud-image>
-
-
-
-            </div>
-            <div
-                class="hero-devices__image-wrapper hero-devices__image-container-5"
-                style="--device-order: 4">
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/-sEOLbanWZe-ovbinqvQ1AXYvIP78RlvD99bzslBSksA-SPx1ThJJ9POxICwV4TuRfEcdBvOGfqMtNXpgMT_bFKxrwiYHysVovqVUA"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-0 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/-sEOLbanWZe-ovbinqvQ1AXYvIP78RlvD99bzslBSksA-SPx1ThJJ9POxICwV4TuRfEcdBvOGfqMtNXpgMT_bFKxrwiYHysVovqVUA=w150-v3"
-      srcset="https://lh3.googleusercontent.com/-sEOLbanWZe-ovbinqvQ1AXYvIP78RlvD99bzslBSksA-SPx1ThJJ9POxICwV4TuRfEcdBvOGfqMtNXpgMT_bFKxrwiYHysVovqVUA=w281-v3 281w,https://lh3.googleusercontent.com/-sEOLbanWZe-ovbinqvQ1AXYvIP78RlvD99bzslBSksA-SPx1ThJJ9POxICwV4TuRfEcdBvOGfqMtNXpgMT_bFKxrwiYHysVovqVUA=w190-v3 190w,https://lh3.googleusercontent.com/-sEOLbanWZe-ovbinqvQ1AXYvIP78RlvD99bzslBSksA-SPx1ThJJ9POxICwV4TuRfEcdBvOGfqMtNXpgMT_bFKxrwiYHysVovqVUA=w201-v3 201w,"
-      sizes="(min-width: 1440px) 281px,(min-width: 1000px) 190px,(min-width: 600px) 201px,"
-      alt="Collage of Android 10 features on multiple different devices"
-    >
-      </noscript>
-  </cloud-image>
-
-
-
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/_-qnPlgSjXe3svBP22bA6Rqb2kh6ZlrN_BH44HkZqJdSqmXRlLQfJ2kPGSwVuMKG7lwUEN30DQheykT2KvXmMsVLPIbieidWZ6PmQqw"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-1 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <img src="https://lh3.googleusercontent.com/_-qnPlgSjXe3svBP22bA6Rqb2kh6ZlrN_BH44HkZqJdSqmXRlLQfJ2kPGSwVuMKG7lwUEN30DQheykT2KvXmMsVLPIbieidWZ6PmQqw=w320" alt="Collage of Android 10 features on multiple different devices">
-  </cloud-image>
-
-
-
-            </div>
-            <div
-                class="hero-devices__image-wrapper hero-devices__image-container-6"
-                style="--device-order: 5">
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/I7EljHBWhI6OrWQ_M_I7l_I7iMDFZ_gXcdjTA1CBR0g7cEnoa2hGX0L_2hiirXNU18ALUG_l2F6wOqeaLtNwsZFN02He_4wn4Wr_AQ"
-    alt="Smart Reply"class="hero-devices__image hero-devices__image-0 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/I7EljHBWhI6OrWQ_M_I7l_I7iMDFZ_gXcdjTA1CBR0g7cEnoa2hGX0L_2hiirXNU18ALUG_l2F6wOqeaLtNwsZFN02He_4wn4Wr_AQ=w150-v3"
-      srcset="https://lh3.googleusercontent.com/I7EljHBWhI6OrWQ_M_I7l_I7iMDFZ_gXcdjTA1CBR0g7cEnoa2hGX0L_2hiirXNU18ALUG_l2F6wOqeaLtNwsZFN02He_4wn4Wr_AQ=w281-v3 281w,https://lh3.googleusercontent.com/I7EljHBWhI6OrWQ_M_I7l_I7iMDFZ_gXcdjTA1CBR0g7cEnoa2hGX0L_2hiirXNU18ALUG_l2F6wOqeaLtNwsZFN02He_4wn4Wr_AQ=w190-v3 190w,https://lh3.googleusercontent.com/I7EljHBWhI6OrWQ_M_I7l_I7iMDFZ_gXcdjTA1CBR0g7cEnoa2hGX0L_2hiirXNU18ALUG_l2F6wOqeaLtNwsZFN02He_4wn4Wr_AQ=w201-v3 201w,"
-      sizes="(min-width: 1440px) 281px,(min-width: 1000px) 190px,(min-width: 600px) 201px,"
-      alt="Smart Reply"
-    >
-      </noscript>
-  </cloud-image>
-
-
-
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/yKpMp_3re7nRuD9dj6UATicqsRo6Oi63s77gpt8orPAQ7tXUMOvw31_Y_nCDmpsNgcs5W8Zeh2lXXUkq4xgzlfl5mLjJcAY9awVqOA"
-    alt="A video overview of all the new features in Android 10"class="hero-devices__image hero-devices__image-1 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <img src="https://lh3.googleusercontent.com/yKpMp_3re7nRuD9dj6UATicqsRo6Oi63s77gpt8orPAQ7tXUMOvw31_Y_nCDmpsNgcs5W8Zeh2lXXUkq4xgzlfl5mLjJcAY9awVqOA=w320" alt="A video overview of all the new features in Android 10">
-  </cloud-image>
-
-
-
-            </div>
-            <div
-                class="hero-devices__image-wrapper hero-devices__image-container-7"
-                style="--device-order: 6">
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/65nmK8YoOdTVcMoSHa-Dw30HM_PkLsWmKFmmDmZx5mvyPxaK3Q9T4q3Zy1FOEktv48nm-6LXSkubVq0pT1NX4Si8pVVh8ybOI6ly8A"
-    alt="Location"class="hero-devices__image hero-devices__image-0 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/65nmK8YoOdTVcMoSHa-Dw30HM_PkLsWmKFmmDmZx5mvyPxaK3Q9T4q3Zy1FOEktv48nm-6LXSkubVq0pT1NX4Si8pVVh8ybOI6ly8A=w150-v3"
-      srcset="https://lh3.googleusercontent.com/65nmK8YoOdTVcMoSHa-Dw30HM_PkLsWmKFmmDmZx5mvyPxaK3Q9T4q3Zy1FOEktv48nm-6LXSkubVq0pT1NX4Si8pVVh8ybOI6ly8A=w281-v3 281w,https://lh3.googleusercontent.com/65nmK8YoOdTVcMoSHa-Dw30HM_PkLsWmKFmmDmZx5mvyPxaK3Q9T4q3Zy1FOEktv48nm-6LXSkubVq0pT1NX4Si8pVVh8ybOI6ly8A=w190-v3 190w,https://lh3.googleusercontent.com/65nmK8YoOdTVcMoSHa-Dw30HM_PkLsWmKFmmDmZx5mvyPxaK3Q9T4q3Zy1FOEktv48nm-6LXSkubVq0pT1NX4Si8pVVh8ybOI6ly8A=w201-v3 201w,"
-      sizes="(min-width: 1440px) 281px,(min-width: 1000px) 190px,(min-width: 600px) 201px,"
-      alt="Location"
-    >
-      </noscript>
-  </cloud-image>
-
-
-
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/69nvA9_EgHvIMf5GBtkpQajvJNkJB6xxUOFf-VIZij7ULENCVOBH31KF-CUZNAuVBhbTmG1DlhapN5cyMHmxnnEiCOKDnGbaBCoR"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-1 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <img src="https://lh3.googleusercontent.com/69nvA9_EgHvIMf5GBtkpQajvJNkJB6xxUOFf-VIZij7ULENCVOBH31KF-CUZNAuVBhbTmG1DlhapN5cyMHmxnnEiCOKDnGbaBCoR=w320" alt="Collage of Android 10 features on multiple different devices">
-  </cloud-image>
-
-
-
-            </div>
-            <div
-                class="hero-devices__image-wrapper hero-devices__image-container-8"
-                style="--device-order: 7">
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/slYatCrskHQ69boptWIn7oJzzFslPtaJ0XzZUYBNPBSzvrrF5R9o43-dcIxjy7ID9GUTCACUxsgV0U3V7D3vqpq2OoonXPkPTTwksw"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-0 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/slYatCrskHQ69boptWIn7oJzzFslPtaJ0XzZUYBNPBSzvrrF5R9o43-dcIxjy7ID9GUTCACUxsgV0U3V7D3vqpq2OoonXPkPTTwksw=w150-v3"
-      srcset="https://lh3.googleusercontent.com/slYatCrskHQ69boptWIn7oJzzFslPtaJ0XzZUYBNPBSzvrrF5R9o43-dcIxjy7ID9GUTCACUxsgV0U3V7D3vqpq2OoonXPkPTTwksw=w281-v3 281w,https://lh3.googleusercontent.com/slYatCrskHQ69boptWIn7oJzzFslPtaJ0XzZUYBNPBSzvrrF5R9o43-dcIxjy7ID9GUTCACUxsgV0U3V7D3vqpq2OoonXPkPTTwksw=w190-v3 190w,https://lh3.googleusercontent.com/slYatCrskHQ69boptWIn7oJzzFslPtaJ0XzZUYBNPBSzvrrF5R9o43-dcIxjy7ID9GUTCACUxsgV0U3V7D3vqpq2OoonXPkPTTwksw=w201-v3 201w,"
-      sizes="(min-width: 1440px) 281px,(min-width: 1000px) 190px,(min-width: 600px) 201px,"
-      alt="Collage of Android 10 features on multiple different devices"
-    >
-      </noscript>
-  </cloud-image>
-
-
-
-                        <cloud-image
-    src="https://lh3.googleusercontent.com/rAz25BbWe_RnWgIqrwEUKutfjrnzzBVcbgi_K3dS-gFhYyXQCoeodYLpDCijrLfDFSZ8P9dnpyZNGmQYMiezRQxM-7QqUyV2313lmII"
-    alt="Collage of Android 10 features on multiple different devices"class="hero-devices__image hero-devices__image-1 cloud-image--portrait"      width="150"
-      md="201"
-      lg="190"
-      xl="281"
-  >
-      <img src="https://lh3.googleusercontent.com/rAz25BbWe_RnWgIqrwEUKutfjrnzzBVcbgi_K3dS-gFhYyXQCoeodYLpDCijrLfDFSZ8P9dnpyZNGmQYMiezRQxM-7QqUyV2313lmII=w320" alt="Collage of Android 10 features on multiple different devices">
-  </cloud-image>
-
-
-
-            </div>
-          <div class="background-shapes">
-            <div class="hero-devices__shape hero-devices__shape--1 background-shapes__circle-filled"></div>
-            <div class="hero-devices__shape hero-devices__shape--2 background-shapes__sausage"></div>
-            <div class="hero-devices__shape hero-devices__shape--3 background-shapes__sausage"></div>
-          </div>
-        </div>
-      </section> -->
 
         <!-- ............about section start....... -->
 
@@ -3404,20 +3050,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="content-multimedia__body is-body-wrapper">
                         <div class="accordion accordion--is-1" role="tablist" aria-multiselectable="true" data-c-accordion data-android-component="accordion-component" data-android-component-config="{&#34;small&#34;: {&#34;hideAccordion&#34;: false}, &#34;large&#34;: {&#34;hideAccordion&#34;: true}, &#34;medium&#34;: {&#34;hideAccordion&#34;: true}, &#34;extra-large&#34;: {&#34;hideAccordion&#34;: true}}">
                             <div class="accordion__item">
-                                <!-- <div class="accordion__item-head" id="q-live-caption-featured-accordion_1" role="tab" aria-expanded="false">
-                                    <button class="accordion__item-button" aria-label="Automatically caption media playing on your phone." aria-controls="q-live-caption-featured-accordion_1_body" data-g-config="{'eventLabel': '', 'moduleName': 'content-multimedia', 'eventCategory': 'module interactions', 'title': 'feature accordion'}">
-
-                                    <h3>Automatically caption media playing on your phone.</h3><svg class="icon--svg accordion__item-icon" aria-hidden="true">
-                <use xlink:href="#ico-arrow-round"></use>
-               </svg></button>
-                                </div> -->
                                 <div class="accordion__item-body" id="q-live-caption-featured-accordion_1_body" role="tabpanel" aria-labelledby="q-live-caption-featured-accordion_1" aria-expanded="false">
                                     <div class="accordion__item-content">
                                         <p>In the annual fest of ABESIT.Cultural evenrts are the blend of challenging indovidual and team events. cultural events not only make us feel the challenge but also bring the entusiasam level of the youth.</p>
                                     </div>
-                                    <a href="https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&amp;hl=en" class="cta cta--is-2" target="_blank" rel="noopener" data-g-config="{'eventLabel': 'try it now', 'moduleName': 'content-multimedia', 'linkUrl': 'https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&hl=en', 'eventCategory': 'module interactions', 'title': 'cta'}">register now<svg class="icon--svg cta__icon cta__external" aria-hidden="true">
-                                        <use xlink:href="#ico-arrow-large"></use>
-                                      </svg></a>
+                                    <a href="cultural/index.html" class="cta cta--is-2 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'try it now',
+                            'moduleName': 'content-multimedia', 'linkUrl': 'https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&hl=en', 'eventCategory': 'module interactions', 'title': 'cta'} ">register now<svg class="icon--svg
+                            cta__icon cta__external " aria-hidden="true ">
+                     <use xlink:href="#ico-arrow-large "></use>
+                    </svg></a>
+
                                 </div>
                             </div>
 
@@ -3478,8 +3120,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         </div>
 
-                        <a href="register/register.html" class="cta cta--is-2 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'try it now',
-                            'moduleName': 'content-multimedia', 'linkUrl': 'https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&hl=en', 'eventCategory': 'module interactions', 'title': 'cta'} ">register now<svg class="icon--svg
+                        <a href="technical/index.html" class="cta cta--is-2 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'try it now',
+                            'moduleName': 'content-multimedia', 'linkUrl': 'https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&hl=en', 'eventCategory': 'module interactions', 'title': 'cta'} ">Register now<svg class="icon--svg
                             cta__icon cta__external " aria-hidden="true ">
                      <use xlink:href="#ico-arrow-large "></use>
                     </svg></a>
@@ -3510,6 +3152,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                 </div>
+
+                <div class="background-shapes background-shapes--parallax">
+
+                    <div class="
+          background-shapes__circle-filled
+          background-shapes__e0e72b0022705389f55cc8deb7102759">
+                    </div>
+                </div>
+
+
                 <div class="content-multimedia__copy-wrapper ">
 
                     <span class="content-multimedia__icon is-icon "><svg class="icon--svg " aria-hidden="true ">
@@ -3520,13 +3172,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="accordion accordion--is-1 " role="tablist " aria-multiselectable="true " data-c-accordion data-android-component="accordion-component " data-android-component-config="{&#34;small&#34;: {&#34;hideAccordion&#34;: false},
                             &#34;large&#34;: {&#34;hideAccordion&#34;: true}, &#34;medium&#34;: {&#34;hideAccordion&#34;: true}, &#34;extra-large&#34;: {&#34;hideAccordion&#34;: true}} ">
                             <div class="accordion__item ">
-                                <div class="accordion__item-head " id="q-sound-amplifier-featured-accordion_1 " role="tab " aria-expanded="false ">
-                                    <!-- <button class="accordion__item-button " aria-label="Hear what’s around you more clearly. " aria-controls="q-sound-amplifier-featured-accordion_1_body " data-g-config="{ 'eventLabel': '', 'moduleName':
-                            'content-multimedia', 'eventCategory': 'module interactions', 'title': 'feature accordion'} ">
-          <h3>Hear what’s around you more clearly.</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button> -->
-                                </div>
+
                                 <div class="accordion__item-body " id="q-sound-amplifier-featured-accordion_1_body " role="tabpanel " aria-labelledby="q-sound-amplifier-featured-accordion_1 " aria-expanded="false ">
                                     <div class="accordion__item-content ">
                                         <p>Fine arts and Photographyis a extravaganaza that has diverse events catering to almost every art from cultural.painting, sculpture, architecture, music, and poetry, with performing arts including theatre and dance.
@@ -3536,8 +3182,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
 
                         </div>
-                        <a href="register/register.html" class="cta cta--is-2 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'try it now',
-                            'moduleName': 'content-multimedia', 'linkUrl': 'https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&hl=en', 'eventCategory': 'module interactions', 'title': 'cta'} ">register now<svg class="icon--svg
+                        <a href="fine/index.html" class="cta cta--is-2 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'try it now',
+                            'moduleName': 'content-multimedia', 'linkUrl': 'https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&hl=en', 'eventCategory': 'module interactions', 'title': 'cta'} ">Register now<svg class="icon--svg
                             cta__icon cta__external " aria-hidden="true ">
     <use xlink:href="#ico-arrow-large "></use>
   </svg></a>
@@ -3545,9 +3191,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                 </div>
-                <div class="content-multimedia__cta-wrapper "> <a href="https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&amp;hl=en " class="cta cta--is-2 " aria-label="try-it-now-q-sound-amplifier
+                <div class="content-multimedia__cta-wrapper "> <a href="fine/index.html " class="cta cta--is-2 " aria-label="try-it-now-q-sound-amplifier
                             " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'try it now', 'moduleName': 'content-multimedia', 'linkUrl': 'https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&hl=en',
-                            'eventCategory': 'module interactions', 'title': 'cta'} ">register now<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
+                            'eventCategory': 'module interactions', 'title': 'cta'} ">Register now<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
     <use xlink:href="#ico-arrow-large "></use>
   </svg></a>
 
@@ -3617,21 +3263,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
                         <div class="is-video-frame tab-timer__video tab-timer__video--dark ">
-                            <!-- <img src="https://www.android.com/static/images/frames/frame-default.svg " alt=" "> -->
-
-                            <!-- <video aria-hidden="false " aria-label="hit space to toggle play/pause " aria-describedby="transcript-q-gesture-nav-go-back-dark " muted playsinline data-android-component="video-default
-                            " data-android-component-config="{&#39;autoplayMobile&#39;: True, &#39;delay&#39;: 2000, &#39;lazy&#39;: True, &#39;isOnTimer&#39;: True, &#39;contentId&#39;: &#39;02207ea4e0ceb269ce3bb6e40ec49a1e&#39;, &#39;autoplay&#39;: True, &#39;autoplayObserver&#39;: {&#39;threshold&#39;:
-                            0.1, &#39;rootMargin&#39;: &#39;0px 0px 0px 0px&#39;}, &#39;isOnModal&#39;: False} "
-                                data-c-video-id="q-gesture-nav-go-back-dark " data-c-video-sources=" {&#39;mobile&#39;: &#39;https://kstatic.googleusercontent.com/files/40ad985ed7c6a3c1768d3fd08048658f76d68d5d5c82ba70fb437a0b0f7a79f996e6e181110b4ec434248639a2f3a52232ba425e0e42d15858f4e6f5314c69fa&#39;,
-                            &#39;tablet&#39;: &#39;https://kstatic.googleusercontent.com/files/40ad985ed7c6a3c1768d3fd08048658f76d68d5d5c82ba70fb437a0b0f7a79f996e6e181110b4ec434248639a2f3a52232ba425e0e42d15858f4e6f5314c69fa&#39;, &#39;desktop&#39;: &#39;https://kstatic.googleusercontent.com/files/40ad985ed7c6a3c1768d3fd08048658f76d68d5d5c82ba70fb437a0b0f7a79f996e6e181110b4ec434248639a2f3a52232ba425e0e42d15858f4e6f5314c69fa&#39;}
-                            " data-c-video-poster-sources=" {&#39;mobile&#39;: &#39;https://lh3.googleusercontent.com/K1ROYBimrfLweD61oQ-cOG4U43xSkXnJn0VYTeHsgXY8JJCq0XNKF8-_qu5TBtCfFJv3HB5Lab5grkyJWi2QsYxsYzwgwMDXbg5sVg=w195&#39;, &#39;tablet&#39;: &#39;https://lh3.googleusercontent.com/K1ROYBimrfLweD61oQ-cOG4U43xSkXnJn0VYTeHsgXY8JJCq0XNKF8-_qu5TBtCfFJv3HB5Lab5grkyJWi2QsYxsYzwgwMDXbg5sVg=w280&#39;,
-                            &#39;desktop&#39;: &#39;https://lh3.googleusercontent.com/K1ROYBimrfLweD61oQ-cOG4U43xSkXnJn0VYTeHsgXY8JJCq0XNKF8-_qu5TBtCfFJv3HB5Lab5grkyJWi2QsYxsYzwgwMDXbg5sVg=w280&#39;} " data-c-video-preload>
-    <div class="hidden ">
-      <div id="transcript-q-gesture-nav-go-back-dark ">
-        <p>Go back</p>
-      </div>
-    </div>
-  </video> -->
 
                         </div>
 
@@ -3665,11 +3296,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
                     </div>
-                    <!-- <div class="background-shapes background-shapes--parallax ">
-
-                        <div class=" background-shapes__circle background-shapes__circle--secondary background-shapes__fd8abd547e4cf84d0024a57c44a8c23e ">
-                        </div>
-                    </div> -->
 
                     <div class="background-shapes background-shapes--parallax ">
 
@@ -3688,19 +3314,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="accordion accordion--is-1 " role="tablist " aria-multiselectable="true " data-c-accordion data-android-component="accordion-component " data-android-component-config="{&#34;small&#34;: {&#34;hideAccordion&#34;: false},
                             &#34;large&#34;: {&#34;hideAccordion&#34;: true}, &#34;medium&#34;: {&#34;hideAccordion&#34;: true}, &#34;extra-large&#34;: {&#34;hideAccordion&#34;: true}} ">
                             <div class="accordion__item ">
-                                <div class="accordion__item-head " id="q-gesture-navigation-featured-accordion_1 " role="tab " aria-expanded="false ">
-                                    <!-- <button class="accordion__item-button " aria-label="Get around with a swipe and a pull. " aria-controls="q-gesture-navigation-featured-accordion_1_body " data-g-config="{ 'eventLabel': '', 'moduleName':
-                            'content-multimedia', 'eventCategory': 'module interactions', 'title': 'feature accordion'} ">
-          <h3>Get around with a swipe and a pull.</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button> -->
-                                </div>
+
                                 <div class="accordion__item-body " id="q-gesture-navigation-featured-accordion_1_body " role="tabpanel " aria-labelledby="q-gesture-navigation-featured-accordion_1 " aria-expanded="false ">
                                     <div class="accordion__item-content ">
                                         <p>From the most exotic debate to jam and spell bee.Literary events are always abuzz with excitement.</p>
-                                        <a href="https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&amp;hl=en" class="cta cta--is-2" target="_blank" rel="noopener" data-g-config="{'eventLabel': 'try it now', 'moduleName': 'content-multimedia', 'linkUrl': 'https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&hl=en', 'eventCategory': 'module interactions', 'title': 'cta'}">register now<svg class="icon--svg cta__icon cta__external" aria-hidden="true"></svg>
-                                            <use xlink:href="#ico-arrow-large"></use>
-                                          </svg></a>
+                                        <a href="literary/index.html" class="cta cta--is-2 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'try it now',
+                                        'moduleName': 'content-multimedia', 'linkUrl': 'https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier&hl=en', 'eventCategory': 'module interactions', 'title': 'cta'} ">register now<svg class="icon--svg
+                                        cta__icon cta__external " aria-hidden="true ">
+                                 <use xlink:href="#ico-arrow-large "></use>
+                                </svg></a>
+
                                     </div>
                                 </div>
                             </div>
@@ -3715,18 +3338,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-        <section id="gallery " id="q-game-changing " class="content-horizontal content-horizontal--primary grid ">
+        <section id="gallery" id="q-game-changing " class="content-horizontal content-horizontal--primary grid ">
             <h2 class="content-horizontal__heading is-3 ">GALLERY</h2>
 
-            <!-- <button class="tab-timer__button is-7 " role="tab " aria-selected="false " aria-controls="timer-q-family-link-tab-2 " id="timer-q-family-link-2 " type="button " data-g-config="{ 'eventLabel':
-                            'family link - manage what content they see', 'moduleName': 'content-multimedia', 'eventCategory': 'module interactions', 'title': 'timer'} "
-                tabindex="-1 ">
-<svg class="tab-timer__loader " viewBox="25 25 50 50 " aria-hidden="true ">
-<circle class="circle " cx="50 " cy="50 " r="20 "></circle>
-<circle  class="bar " cx="50 " cy="50 " r="20 "></circle>
-</svg>
-<span class="tab-timer__label ">Manage what content they see</span>
-</button> -->
+
 
 
 
@@ -3735,23 +3350,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <img class="mySlides " src="image4.jpg " style="width:100% ">
                 <img class="mySlides " src="image2.jpg " style="width:100% ">
                 <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
-                <img class="mySlides " src="image5.jpg " style="width:100% ">
+                <img class="mySlides " src="static/images/photos/literary.jpg " style="width:100% ">
+                <img class="mySlides " src="static/images/photos/IMG-20181004-WA0130.jpg " style="width:100% ">
+                <img class="mySlides " src="static/images/photos/IMG-20181004-WA0084.jpg " style="width:100% ">
+                <img class="mySlides " src="static/images/photos/IMG-20181004-WA0013.jpg " style="width:100% ">
+                <img class="mySlides " src="static/images/photos/IMG-20181002-WA0023.jpg " style="width:100% ">
+                <img class="mySlides " src="static/images/photos/culture.JPG " style="width:100% ">
+                <img class="mySlides " src="static/images/photos/DSC_0027.JPG " style="width:100% ">
+                <img class="mySlides " src="static/images/photos/DSC_0223.JPG " style="width:100% ">
+                <img class="mySlides " src="static/images/photos/DSC_0120.JPG " style="width:100% ">
+
             </div>
 
             <script>
@@ -3773,21 +3381,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 }
             </script>
 
-
-
-
-
-            <video aria-hidden="true " muted playsinline class="content-horizontal__video content-horizontal__video--light " data-android-component="video-default " data-android-component-config="{&#39;autoplayMobile&#39;: True, &#39;delay&#39;: 0,
-                            &#39;lazy&#39;: True, &#39;isOnTimer&#39;: False, &#39;contentId&#39;: &#39;6485e0f1b6453cf905696febc01dd745&#39;, &#39;autoplay&#39;: True, &#39;autoplayObserver&#39;: {&#39;threshold&#39;: 0.4}, &#39;isOnModal&#39;: False} "
-                data-c-video-id="q-game-changing-video " data-c-video-sources=" {&#39;mobile&#39;: &#39;https://kstatic.googleusercontent.com/files/b54a5a2dbbf1c0d70d85c861286e7e9b89095890b8f6c8c8523e83d35603399027368199708abc75606fa1e13e8fea716a7113bbc51ffaedf18e695b3b4a5780&#39;,
-                            &#39;tablet&#39;: &#39;https://kstatic.googleusercontent.com/files/b54a5a2dbbf1c0d70d85c861286e7e9b89095890b8f6c8c8523e83d35603399027368199708abc75606fa1e13e8fea716a7113bbc51ffaedf18e695b3b4a5780&#39;, &#39;desktop&#39;: &#39;https://kstatic.googleusercontent.com/files/b54a5a2dbbf1c0d70d85c861286e7e9b89095890b8f6c8c8523e83d35603399027368199708abc75606fa1e13e8fea716a7113bbc51ffaedf18e695b3b4a5780&#39;}
-                            " data-c-video-poster-sources=" {&#39;mobile&#39;: &#39;https://lh3.googleusercontent.com/3pbzUZouiCWbkJQWTLllQTUh1vqPw-pJJWc77mdXQxPiEDdzY8Y5KKGmgitFrvqKizgo37ZgBQD8uDWb4tou4Bc63ON19QDBv0FQ=w379&#39;, &#39;tablet&#39;: &#39;https://lh3.googleusercontent.com/3pbzUZouiCWbkJQWTLllQTUh1vqPw-pJJWc77mdXQxPiEDdzY8Y5KKGmgitFrvqKizgo37ZgBQD8uDWb4tou4Bc63ON19QDBv0FQ=w703&#39;,
-                            &#39;desktop&#39;: &#39;https://lh3.googleusercontent.com/3pbzUZouiCWbkJQWTLllQTUh1vqPw-pJJWc77mdXQxPiEDdzY8Y5KKGmgitFrvqKizgo37ZgBQD8uDWb4tou4Bc63ON19QDBv0FQ=w625&#39;} " data-c-video-loop data-c-video-preload>
-  </video>
-
         </section>
 
-        <section id="contact " id="q-data-private " class="content-cards ">
+        <section id="contact" id="q-data-private " class="content-cards ">
             <div class="content-cards__wrapper grid ">
                 <div class="content-cards__masthead ">
                     <h2 class="content-cards__heading is-3 ">Core Team Members</h2>
@@ -3798,136 +3394,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div id="q-data-private-cards " class="content-cards__cards-wrapper " data-g-config="{ 'eventLabel': '', 'moduleName': 'content-cards', 'eventCategory': 'module interactions', 'title': 'move carousel'} ">
                     <article class="content-cards__card ">
+
                         <div class="content-cards__image-wrapper ">
-                            <!-- <cloud-image src="https://lh3.googleusercontent.com/DjfyvKAnfb_GYHf_8YaZ-Ce2dnSUj_hHNcgazJLBV2uYYo6nm6Xv1atJJNcvXUCyLU9iLp5vyv6308vBGFEjh3aY8B6ZITbV2iWaAA " alt="Privacy and permissions setttings " class="content-cards__image
-                            content-cards__image-light cloud-image--landscape " -->
-                            <!-- width="300 " md="450 " lg="550 "> -->
-                            <img src="image6.JPG " alt=" width=" 300 " md="450 " lg="550 " ">
 
-                            <!-- <img
-      src=" "
-      srcset="https://lh3.googleusercontent.com/DjfyvKAnfb_GYHf_8YaZ-Ce2dnSUj_hHNcgazJLBV2uYYo6nm6Xv1atJJNcvXUCyLU9iLp5vyv6308vBGFEjh3aY8B6ZITbV2iWaAA=w550-v3 550w,https://lh3.googleusercontent.com/DjfyvKAnfb_GYHf_8YaZ-Ce2dnSUj_hHNcgazJLBV2uYYo6nm6Xv1atJJNcvXUCyLU9iLp5vyv6308vBGFEjh3aY8B6ZITbV2iWaAA=w450-v3
-                            450w, "
-      sizes="(min-width: 1000px) 550px,(min-width: 600px) 450px, "
-      alt="Privacy and permissions setttings "
-    > -->
-
-
-
-
-                            <!-- <cloud-image src="https://lh3.googleusercontent.com/noAo3o0lRZcYVc4SvB5_KHoLykIZveyL85o26i8ELc0iWH91gjOBr4o7zx6Yh9nC2tkHe80sIbV2iOu0cKs8oIyC_TtnY3C1t_8T " alt="Privacy and permissions setttings " class="content-cards__image
-                            content-cards__image-dark cloud-image--landscape "
-                                width="300 " md="450 " lg="550 ">
-                                <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/noAo3o0lRZcYVc4SvB5_KHoLykIZveyL85o26i8ELc0iWH91gjOBr4o7zx6Yh9nC2tkHe80sIbV2iOu0cKs8oIyC_TtnY3C1t_8T=w300-v3 "
-      srcset="https://lh3.googleusercontent.com/noAo3o0lRZcYVc4SvB5_KHoLykIZveyL85o26i8ELc0iWH91gjOBr4o7zx6Yh9nC2tkHe80sIbV2iOu0cKs8oIyC_TtnY3C1t_8T=w550-v3 550w,https://lh3.googleusercontent.com/noAo3o0lRZcYVc4SvB5_KHoLykIZveyL85o26i8ELc0iWH91gjOBr4o7zx6Yh9nC2tkHe80sIbV2iOu0cKs8oIyC_TtnY3C1t_8T=w450-v3
-                            450w, "
-      sizes="(min-width: 1000px) 550px,(min-width: 600px) 450px, "
-      alt="Privacy and permissions setttings "
-    >
-      </noscript>
-                            </cloud-image> -->
-
-
+                            <img src="static/images/core team/IMG-20190919-WA0002.jpg " alt=" width=" 300 " md="450 " lg="550 " ">
                         </div>
 
-
-
-                        <h3 class="content-cards__card-heading is-5 " align="center "> Sahyog Saini<br> 8171940441</h3>
+                        <h3 class="content-cards__card-heading is-5 " align="center "> Gaurav Chaudhary<br> 8171940441</h3>
                     </article>
                     <article class="content-cards__card ">
                         <div class="content-cards__image-wrapper ">
+                            <img src="static/images/core team/FullSizeRender.jpg" width="300 " height="344" md="450 " lg="550 ">
+                            <noscript>
+                        </div>
+                        <h3 class="content-cards__card-heading is-5 "><b></b><br>contact</h3>
+                    </article>
+                    <article class="content-cards__card ">
+                        <div class="content-cards__image-wrapper ">
+
                             <img src="image1.JPG " width="300 " md="450 " lg="550 ">
-                            <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/rTaTdb1A4EfTN0E-oeX2jnzDyr8p1SCXNCFB_JpWi9qD6XN9CRpnhFahrGAxsv6X4mAF2TaP_ahNVzTTv2nxhs2dHAsnfNe3IbFwKA=w300-v3 "
-      srcset="https://lh3.googleusercontent.com/rTaTdb1A4EfTN0E-oeX2jnzDyr8p1SCXNCFB_JpWi9qD6XN9CRpnhFahrGAxsv6X4mAF2TaP_ahNVzTTv2nxhs2dHAsnfNe3IbFwKA=w550-v3 550w,https://lh3.googleusercontent.com/rTaTdb1A4EfTN0E-oeX2jnzDyr8p1SCXNCFB_JpWi9qD6XN9CRpnhFahrGAxsv6X4mAF2TaP_ahNVzTTv2nxhs2dHAsnfNe3IbFwKA=w450-v3
-                            450w, "
-      sizes="(min-width: 1000px) 550px,(min-width: 600px) 450px, "
-      alt="Web &amp; App Activity notification "
-    >
-      </noscript>
-                            </cloud-image <img src=" " alt="Web &amp; App Activity notification " class="content-cards__image content-cards__image-dark cloud-image--landscape " width="300 " md="450 " lg="550 ">
-                            <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/siC_cemzNwib2mrUqyUtHMXggv52_9oo2INLUmtKiLPtzyJRw5dK521kKVArh02PruaxNHYiNTdQ5RIsUj7JDY2SLkmF9JL8Un2klcQ=w300-v3 "
-      srcset="https://lh3.googleusercontent.com/siC_cemzNwib2mrUqyUtHMXggv52_9oo2INLUmtKiLPtzyJRw5dK521kKVArh02PruaxNHYiNTdQ5RIsUj7JDY2SLkmF9JL8Un2klcQ=w550-v3 550w,https://lh3.googleusercontent.com/siC_cemzNwib2mrUqyUtHMXggv52_9oo2INLUmtKiLPtzyJRw5dK521kKVArh02PruaxNHYiNTdQ5RIsUj7JDY2SLkmF9JL8Un2klcQ=w450-v3
-                            450w, "
-      sizes="(min-width: 1000px) 550px,(min-width: 600px) 450px, "
-      alt="Web &amp; App Activity notification "
-    >
-      </noscript>
-                            </cloud-image>
+              </noscript>
+                        </div>
 
+                        <h3 class="content-cards__card-heading is-5 "><b>Sarthak Sharma</b><br>contact</h3>
+                    </article>
+                    <article class="content-cards__card ">
+                        <div class="content-cards__image-wrapper ">
+
+                            <noscript>
+                            <img src="image1.JPG " width="300 " md="450 " lg="550 ">
+
+                            </noscript>
+
+                            <img src="image1.JPG " width="300 " md="450 " lg="550 ">
 
                         </div>
 
                         <h3 class="content-cards__card-heading is-5 "><b>Name</b><br>contact</h3>
                     </article>
+
+
                     <article class="content-cards__card ">
                         <div class="content-cards__image-wrapper ">
-                            <cloud-image src="https://lh3.googleusercontent.com/lsi2m_LyVzNwkQBXMkuLKmZi-EfVvlVXgd7IcjD_aPGpMN_S85V7LqhuezlCThwwRfEjg2lBc54Qq-H0c2uhIF4KM6PpXPWDGn360rw " alt="Tri-state location sharing settings " class="content-cards__image
-                            content-cards__image-light cloud-image--landscape " width="300 " md="450 " lg="550 ">
-                                <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/lsi2m_LyVzNwkQBXMkuLKmZi-EfVvlVXgd7IcjD_aPGpMN_S85V7LqhuezlCThwwRfEjg2lBc54Qq-H0c2uhIF4KM6PpXPWDGn360rw=w300-v3 "
-      srcset="https://lh3.googleusercontent.com/lsi2m_LyVzNwkQBXMkuLKmZi-EfVvlVXgd7IcjD_aPGpMN_S85V7LqhuezlCThwwRfEjg2lBc54Qq-H0c2uhIF4KM6PpXPWDGn360rw=w550-v3 550w,https://lh3.googleusercontent.com/lsi2m_LyVzNwkQBXMkuLKmZi-EfVvlVXgd7IcjD_aPGpMN_S85V7LqhuezlCThwwRfEjg2lBc54Qq-H0c2uhIF4KM6PpXPWDGn360rw=w450-v3
-                            450w, "
-      sizes="(min-width: 1000px) 550px,(min-width: 600px) 450px, "
-      alt="Tri-state location sharing settings "
-    >
-      </noscript>
-                            </cloud-image>
 
+                            <noscript>
+                                        <img src="image1.JPG " width="300 " md="450 " lg="550 ">
+           
+                          </noscript>
 
-                            <cloud-image src="https://lh3.googleusercontent.com/-8QWoH7z3BuXqGM1bKWjDjK7a3pIUpDx8_xV4egY91W-wf6IjeM3WNYSj-NVtsqnw-44AV3z5MnCH2NNT0UMdojVyS41C7wggDhBKw " alt="Tri-state location sharing settings " class="content-cards__image
-                            content-cards__image-dark cloud-image--landscape " width="300 " md="450 " lg="550 ">
-                                <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/-8QWoH7z3BuXqGM1bKWjDjK7a3pIUpDx8_xV4egY91W-wf6IjeM3WNYSj-NVtsqnw-44AV3z5MnCH2NNT0UMdojVyS41C7wggDhBKw=w300-v3 "
-      srcset="https://lh3.googleusercontent.com/-8QWoH7z3BuXqGM1bKWjDjK7a3pIUpDx8_xV4egY91W-wf6IjeM3WNYSj-NVtsqnw-44AV3z5MnCH2NNT0UMdojVyS41C7wggDhBKw=w550-v3 550w,https://lh3.googleusercontent.com/-8QWoH7z3BuXqGM1bKWjDjK7a3pIUpDx8_xV4egY91W-wf6IjeM3WNYSj-NVtsqnw-44AV3z5MnCH2NNT0UMdojVyS41C7wggDhBKw=w450-v3
-                            450w, "
-      sizes="(min-width: 1000px) 550px,(min-width: 600px) 450px, "
-      alt="Tri-state location sharing settings "
-    >
-      </noscript>
-                            </cloud-image>
-
-
-                        </div>
-
-                        <h3 class="content-cards__card-heading is-5 "><b>Name</b><br>contact</h3>
-                    </article>
-                    <article class="content-cards__card ">
-                        <div class="content-cards__image-wrapper ">
-                            <cloud-image src="https://lh3.googleusercontent.com/4XEIGyAtxqACezxLbKvOxgmjSFR2lpTYMtLYdzMzRdKCt-znQfOKkuLR-FQERf9Pl3Liwr4b1-13ZG6ccyK_EHgyKm_GIICxIeG_RA " alt="Ad opt out settings toggle " class="content-cards__image content-cards__image-light
-                            cloud-image--landscape " width="300 " md="450 " lg="550 ">
-                                <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/4XEIGyAtxqACezxLbKvOxgmjSFR2lpTYMtLYdzMzRdKCt-znQfOKkuLR-FQERf9Pl3Liwr4b1-13ZG6ccyK_EHgyKm_GIICxIeG_RA=w300-v3 "
-      srcset="https://lh3.googleusercontent.com/4XEIGyAtxqACezxLbKvOxgmjSFR2lpTYMtLYdzMzRdKCt-znQfOKkuLR-FQERf9Pl3Liwr4b1-13ZG6ccyK_EHgyKm_GIICxIeG_RA=w550-v3 550w,https://lh3.googleusercontent.com/4XEIGyAtxqACezxLbKvOxgmjSFR2lpTYMtLYdzMzRdKCt-znQfOKkuLR-FQERf9Pl3Liwr4b1-13ZG6ccyK_EHgyKm_GIICxIeG_RA=w450-v3
-                            450w, "
-      sizes="(min-width: 1000px) 550px,(min-width: 600px) 450px, "
-      alt="Ad opt out settings toggle "
-    >
-      </noscript>
-                            </cloud-image>
-
-
-                            <cloud-image src="https://lh3.googleusercontent.com/ACdFf0oK-f0eUGcdLcYtgmnfe3_1k2E2_v6Hw7OX56a4LszCAXWQUVvGPGphfiBkk6Dsu8FgwCIpvt9B9TACrmJUjadlyl6VLQLT5Q " alt="Ad opt out settings toggle " class="content-cards__image content-cards__image-dark
-                            cloud-image--landscape " width="300 " md="450 " lg="550 ">
-                                <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/ACdFf0oK-f0eUGcdLcYtgmnfe3_1k2E2_v6Hw7OX56a4LszCAXWQUVvGPGphfiBkk6Dsu8FgwCIpvt9B9TACrmJUjadlyl6VLQLT5Q=w300-v3 "
-      srcset="https://lh3.googleusercontent.com/ACdFf0oK-f0eUGcdLcYtgmnfe3_1k2E2_v6Hw7OX56a4LszCAXWQUVvGPGphfiBkk6Dsu8FgwCIpvt9B9TACrmJUjadlyl6VLQLT5Q=w550-v3 550w,https://lh3.googleusercontent.com/ACdFf0oK-f0eUGcdLcYtgmnfe3_1k2E2_v6Hw7OX56a4LszCAXWQUVvGPGphfiBkk6Dsu8FgwCIpvt9B9TACrmJUjadlyl6VLQLT5Q=w450-v3
-                            450w, "
-      sizes="(min-width: 1000px) 550px,(min-width: 600px) 450px, "
-      alt="Ad opt out settings toggle "
-    >
-      </noscript>
-                            </cloud-image>
-
+                            <img src="image1.JPG " width="300 " md="450 " lg="550 ">
 
                         </div>
 
@@ -3935,23 +3450,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </article>
                 </div>
             </div>
-
-            <div data-android-component="progress-bar " data-android-component-config="{&#34;id&#34;: &#34;q-data-private-cards&#34;} " class="carousel-progress content-cards__progress-bar ">
-                <progress aria-hidden="true " class="carousel-progress__bar " max="100 " value="0 "></progress>
-                <button class="carousel-progress__back " aria-hidden="true ">
-          <svg class="icon--svg carousel-progress__back-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-external "></use>
-  </svg>
-
-    </button>
-                <button class="carousel-progress__next " aria-hidden="true ">
-          <svg class="icon--svg carousel-progress__next-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-external "></use>
-  </svg>
-
-    </button>
-            </div>
-
 
             <div class="background-shapes background-shapes--parallax ">
 
@@ -3961,10 +3459,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </section>
 
         <section id="q-security-updates " class="content-horizontal content-horizontal--secondary content-horizontal--full-bleed grid ">
-            <!-- <div class="content-horizontal__eyebrow "><svg class="icon--svg content-horizontal__icon " aria-hidden="true "> -->
-            <!-- <use xlink:href="#ico-security-updates "></use> -->
-            <!-- </svg></div> -->
-            <!-- <h2 class="content-horizontal__heading is-3 ">Get security updates faster.</h2> -->
+
             <div class="content-horizontal__body ">
                 <div class="accordion accordion--is-1 " role="tablist " aria-multiselectable="true " data-c-accordion data-android-component="accordion-component " data-android-component-config="{&#34;small&#34;: {&#34;hideAccordion&#34;: false}, &#34;large&#34;:
                             {&#34;hideAccordion&#34;: true}, &#34;medium&#34;: {&#34;hideAccordion&#34;: true}, &#34;extra-large&#34;: {&#34;hideAccordion&#34;: true}} ">
@@ -3977,69 +3472,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </svg></button>
                         </div>
 
+                        <!-- Page Footer Start-->
+                        <footer class="page-footer">
 
-                        <div class="Cards-div ">
-                            <div class="des-card ">
-                                <img class="prof-pic "></img>
-                                <div class="name "><span>Rahul Bubna</span></div>
-                                <div class="position "><span>Student Union President</span></div>
-                                <div class="phone-no "><span>+91 8952824766</span></div>
-                                <div class="email "><span>President@pilani.bits-pilani.ac.in</span></div>
-                                <div class="dash "></div>
-                            </div>
-                            <div class="des-card ">
-                                <img class="prof-pic "></img>
-                                <div class="name "><span>V Abishek Balaji</span></div>
-                                <div class="position "><span>Student Union General Secretary</span></div>
-                                <div class="phone-no "><span>+91 9566142660</span></div>
-                                <div class="email "><span>gensec@pilani.bits-pilani.ac.in</span></div>
-                                <div class="dash "></div>
-                            </div>
+                            <div class="container text-center">
+                                <!-- Social links-->
 
-                        </div>
-                        <!-- <div class="accordion__item-body " id="content-horizontal__accordion_1_body " role="tabpanel " aria-labelledby="content-horizontal__accordion_1 " aria-expanded="false "> -->
-                        <!-- <div class="accordion__item-content ">
-                                <p>Android devices already get regular security updates. And in Android 10, you'll get them even faster and easier. With Google Play system updates, important Security and Privacy fixes can now be sent directly to your phone
-                                    from Google Play, just the same way all your other apps update. So you get these fixes as soon as they are available.</p>
-                            </div> -->
+                                <div class="copy-right mt-50"><a href="#" class="alt-font">Edited in-house by</a>
 
-                        <!-- <div id="facts " class="small-section bg-light mt-80 mt-xs-80 ">
-                                <div class="container ">
-                                    <div class="row ">
-                                        <div class="col-md-12 ">
-                                            <p class="alt-font ">Some interesting facts</p>
-                                        </div>
-                                    </div>
-                                    <div class="row mt-60 ">
-                                        <div class="col-md-3 col-sm-6 text-center ">
-                                            <div class="fact-item ">
-                                                <div class="fact-number "><span class="icon-trophy "></span><span class="focus-number ">668</span></div>
-                                                <h5 class="fact-desc alt-font ">In Prize To Be Won</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6 text-center ">
-                                            <div class="fact-item ">
-                                                <div class="fact-number "><span class="icon-target "></span><span class="focus-number ">3589</span>
-                                                    <span?>+<span></div>
-                                  <h5 class="fact-desc alt-font ">Participants - FESTIN-O-BEATS 10.0</h5>
+                                    <p>ABHAY CHAUHAN & SAHYOG SAINI - DEVELOPER, FESTIN-O-BEATS 10.0
+                                        <p>
                                 </div>
-                              </div>
-                              <div class="col-md-3 col-sm-6 text-center ">
-                                <div class="fact-item ">
-                                  <div class="fact-number "><span class="icon-briefcase "></span><span class="focus-number ">82</span><span>+</span></div>
-                                                <h5 class="fact-desc alt-font ">Events</h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6 text-center ">
-                                            <div class="fact-item ">
-                                                <div class="fact-number "><span class="icon-happy "></span><span class="focus-number ">7500</span></div>
-                                                <h5 class="fact-desc alt-font ">Footfall</h5>
-                                            </div>
-                                        </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 work-item headline">
+                                    <img class="img-circle" src="img/portfolio/abhay.JPG" alt="Mountains" style="width:100%">
+                                    <p> <b>ABHAY CHAUHAN</b></p>
+                                    <p> +91-9654700769</p>
+                                    <div class="social-links"><a href="https://www.facebook.com/theabhaychauhan" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://www.linkedin.com/in/theabhaychauhan" title="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://github.com/theabhaychauhan" title="Instagram" target="_blank"><i class="fa fa-github"></i></a>
                                     </div>
                                 </div>
-                            </div> -->
-
+                                <div class="col-md-3 col-sm-4 col-xs-12 work-item headline">
+                                    <p>----------------------------------------------------------------------------</p>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 work-item headline">
+                                    <p>----------------------------------------------------------------------------</p>
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-12 work-item headline">
+                                    <img class="img-circle" src="img/portfolio/devraj.jpg" allign="center" alt="Snow" style="width:100%">
+                                    <p> <b> SAHYOG SAINI</b></p>
+                                    <p> +91-8171940441</p>
+                                    <div class="social-links"><a href="https://www.facebook.com/devraj.rathi" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://www.linkedin.com/in/iamdevraj" title="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.instagram.com/devraj_rathi" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div><a href="#top" class="scroll scroll-to-top"><i class="fa fa-angle-up"></i></a>
+                        </footer>
+                        <!-- Page footer end -->
 
 
 
@@ -4048,29 +3516,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             </div>
             </div>
-            <!-- <cloud-image src="https://lh3.googleusercontent.com/HUyaSFwpCAtPi6uEzjSJevbUUNzOsQU4HJ5aWT4L8jOfSxqKYdj1F5TIoRvZz5olFJThReW699HBoE5Klg2oW5uYwXRfGP-dxppOO_0 " alt="Google Play system update in progress " class="content-horizontal__image
-                            content-horizontal__image--light "
-                width="193 " md="436 " lg="250 " xl="286 " src_md="https://lh3.googleusercontent.com/KdDdHpWYOlcSacOrJb84aTcAaiUOL4ZQLcst1lu3_zVN541_xvuXu55y0NmZIiQv6tw3XGG6YMyS29-kss0xGVB14xmjo9a3nl88 " src_lg="https://lh3.googleusercontent.com/t9kttVQ2yyJZlUwwV8qfHPPCW5HlP2UJFko-5J6BL5pb5ZL5ViFMZVx0h46LKX_lbOn7f-pNabog-tTm7gCQpQBzBFo5gga1L3M8eg "
-                src_xl="https://lh3.googleusercontent.com/NSpIdJE_Jeqdvt_IudpV4V1B1pHHa1HjUTG1s4qrU-TDIsU2GsiUY09sYMRImVxEGHu6534roaQ8qqGS6uWXIeA0q7kWC3nqeCCvqA ">
-                <noscript>
-        <picture><source srcset="https://lh3.googleusercontent.com/NSpIdJE_Jeqdvt_IudpV4V1B1pHHa1HjUTG1s4qrU-TDIsU2GsiUY09sYMRImVxEGHu6534roaQ8qqGS6uWXIeA0q7kWC3nqeCCvqA " media="(min-width: 1440px) ">        <source srcset="https://lh3.googleusercontent.com/t9kttVQ2yyJZlUwwV8qfHPPCW5HlP2UJFko-5J6BL5pb5ZL5ViFMZVx0h46LKX_lbOn7f-pNabog-tTm7gCQpQBzBFo5gga1L3M8eg
-                            " media="(min-width: 1000px) "><source srcset="https://lh3.googleusercontent.com/KdDdHpWYOlcSacOrJb84aTcAaiUOL4ZQLcst1lu3_zVN541_xvuXu55y0NmZIiQv6tw3XGG6YMyS29-kss0xGVB14xmjo9a3nl88 " media="(min-width: 600px) "><img src="https://lh3.googleusercontent.com/HUyaSFwpCAtPi6uEzjSJevbUUNzOsQU4HJ5aWT4L8jOfSxqKYdj1F5TIoRvZz5olFJThReW699HBoE5Klg2oW5uYwXRfGP-dxppOO_0=w320
-                            " alt="Google Play system update in progress ">
-    </picture>
-      </noscript>
-            </cloud-image>
-
-
-            <cloud-image src="https://lh3.googleusercontent.com/NG56nOPT5KK9NnBtnPo_Wosro2k2exxfxktFGnmf6ZepNYiJwa7d1zY3PXp1ZNWDHtGvNQXLzE9MKaTtV3Q6ZvYipn_YhLYnVMKCNFg " alt="Google Play system update in progress " class="content-horizontal__image content-horizontal__image--dark "
-                width="193 " md="436 " lg="250 " xl="286 " src_md="https://lh3.googleusercontent.com/HDEOutYOEq4uOAcl6Yfd3ebAUMLDM-hssIMpj_mjVoBpw4AgBL_xrXMXc1BApd-9mYH_8grR0cqCbtYFD9De1199tACAChedCb1-Dw " src_lg="https://lh3.googleusercontent.com/qjVUOmYv8FP2GU7PzKOKuPxjpzqLnxbcCUdnCGit3o-6Xj7DNFniFq8KxCPQRQXPlpoXhL52hvjgcu82sWOK2KsGkGa8iD2MVtnuFA "
-                src_xl="https://lh3.googleusercontent.com/NQQB1mAWU1i5oDWUnX-_jBcVJ-7PesshiufSYo3roawwRSO7TIjAUAJ0pnpyYOtoGhfmLpkeI_hSa-cnffN4NYptZGm2LQYn4DHzSg ">
-                <noscript>
-        <picture><source srcset="https://lh3.googleusercontent.com/NQQB1mAWU1i5oDWUnX-_jBcVJ-7PesshiufSYo3roawwRSO7TIjAUAJ0pnpyYOtoGhfmLpkeI_hSa-cnffN4NYptZGm2LQYn4DHzSg " media="(min-width: 1440px) ">        <source srcset="https://lh3.googleusercontent.com/qjVUOmYv8FP2GU7PzKOKuPxjpzqLnxbcCUdnCGit3o-6Xj7DNFniFq8KxCPQRQXPlpoXhL52hvjgcu82sWOK2KsGkGa8iD2MVtnuFA
-                            " media="(min-width: 1000px) "><source srcset="https://lh3.googleusercontent.com/HDEOutYOEq4uOAcl6Yfd3ebAUMLDM-hssIMpj_mjVoBpw4AgBL_xrXMXc1BApd-9mYH_8grR0cqCbtYFD9De1199tACAChedCb1-Dw " media="(min-width: 600px) "><img src="https://lh3.googleusercontent.com/NG56nOPT5KK9NnBtnPo_Wosro2k2exxfxktFGnmf6ZepNYiJwa7d1zY3PXp1ZNWDHtGvNQXLzE9MKaTtV3Q6ZvYipn_YhLYnVMKCNFg=w320
-                            " alt="Google Play system update in progress ">
-    </picture>
-      </noscript>
-            </cloud-image> -->
 
             <div class="content-horizontal__shapes-wrapper ">
                 <div class="background-shapes ">
@@ -4098,9 +3543,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class=" background-shapes__wave background-shapes__125f786b58e2e3d9ba8828ecacf5cd31 ">
                     </div>
 
+                    <div class=" background-shapes__wave background-shapes__1e7e705383f9c8c7b0ad743747ae330c ">
+                    </div>
 
                     <div class=" background-shapes__wave background-shapes__1e7e705383f9c8c7b0ad743747ae330c ">
                     </div>
+
+                    <div class=" background-shapes__wave background-shapes__1e7e705383f9c8c7b0ad743747ae330c ">
+                    </div>
+
+                    <div class=" background-shapes__wave background-shapes__1e7e705383f9c8c7b0ad743747ae330c ">
+                    </div>
+
+                    <div class=" background-shapes__wave background-shapes__1e7e705383f9c8c7b0ad743747ae330c ">
+                    </div>
+
                 </div>
             </div>
 
@@ -4108,949 +3565,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         </section>
 
-        <!-- <section id="q-digital-wellbeing " class="content-resizable " data-android-component="content-resizable " data-android-component-config="{ 'blockCssClass': 'content-resizable' } ">
-            <div class="content-resizable__image-wrapper ">
-                <cloud-image src="https://lh3.googleusercontent.com/-eTlVdt1zblkWNVWUf22N55N9XsQEBkeLN1kwj4OFX_FPumSY-6itYezfJaz9aMUObXzJvys9t2KtaTKZBClSY_2-XEOF9dPoL__Tg " alt="Google Play system update in progress " class="content-resizable__image
-                            " width="411 " md="768 "
-                    lg="1440 " xl="2600 " src_md="https://lh3.googleusercontent.com/NNz08xrvCJzL59uJ_oiJ2MpOtM9UPaONby5RbiNVxbKVhe4ctP5QG1etnkKZzJ-YO38eaGp91vaA4KpqnyrJ_vBJ82eM_XMXT1thvA " src_lg="https://lh3.googleusercontent.com/AJL0uqJQdfL6oIwt3nqVCN9oTAV2zV6A9EvcAxV3vuZNrHdQ-0_xj4wjGq0O1hyA1IC_M7OTnIipCX2-apVhA5CY2HucKCvmEKqe "
-                    src_xl="https://lh3.googleusercontent.com/joQgOq385NA_LPbDynjm7YTOMhmQ4gGN_oGGN5Gaf3wbt0TTVk_GI4ng-3TyKAgxV9a1rFd2dXZ5pl6uaarc2E_gV79GOGOMwA49bU0 ">
-                    <noscript>
-        <picture><source srcset="https://lh3.googleusercontent.com/joQgOq385NA_LPbDynjm7YTOMhmQ4gGN_oGGN5Gaf3wbt0TTVk_GI4ng-3TyKAgxV9a1rFd2dXZ5pl6uaarc2E_gV79GOGOMwA49bU0 " media="(min-width: 1440px) ">        <source srcset="https://lh3.googleusercontent.com/AJL0uqJQdfL6oIwt3nqVCN9oTAV2zV6A9EvcAxV3vuZNrHdQ-0_xj4wjGq0O1hyA1IC_M7OTnIipCX2-apVhA5CY2HucKCvmEKqe
-                            " media="(min-width: 1000px) "><source srcset="https://lh3.googleusercontent.com/NNz08xrvCJzL59uJ_oiJ2MpOtM9UPaONby5RbiNVxbKVhe4ctP5QG1etnkKZzJ-YO38eaGp91vaA4KpqnyrJ_vBJ82eM_XMXT1thvA " media="(min-width: 600px) "><img src="https://lh3.googleusercontent.com/-eTlVdt1zblkWNVWUf22N55N9XsQEBkeLN1kwj4OFX_FPumSY-6itYezfJaz9aMUObXzJvys9t2KtaTKZBClSY_2-XEOF9dPoL__Tg=w320
-                            " alt="Google Play system update in progress ">
-    </picture>
-      </noscript>
-                </cloud-image>
 
-            </div>
-            <div class="grid content-resizable__wrapper ">
-                <div class="content-resizable__copy-wrapper ">
-                    <h2 class="content-resizable__heading is-2 ">Digital Wellbeing</h2>
-                    <p class="content-resizable__copy is-copy-m ">Quality time. It’s different for everyone. For some, it’s unplugging on the weekends. For others, it’s spending hours video-chatting with your best friend. Android 10 gives you the tools to find that balance.</p>
-                </div>
-                <div class="background-shapes background-shapes--parallax ">
-
-                    <div class=" background-shapes__sausage background-shapes__sausage--burning-orange background-shapes__5adf9fde086e8f6d9ff3e5a1192720cf ">
-                    </div>
-                </div>
-            </div>
-        </section>
- -->
-
-
-
-        <!-- <section id="q-focus-mode " class="content-multimedia content-multimedia--secondary content-multimedia--reversed content-multimedia--timer " data-android-component="content-multimedia " data-android-component-animation="q-focus-mode ">
-            <div class="content-multimedia__wrapper grid " data-android-component="tab-timer ">
-                <div class="content-multimedia__timer-wrapper ">
-                    <div role="tablist " aria-label="q-focus-mode-timer " aria-hidden="true " aria-orientation="vertical " class="tab-timer__tablist "> <button class="tab-timer__button is-7 " role="tab " aria-selected="true " aria-controls="timer-q-focus-mode-tab-1
-                            " id="timer-q-focus-mode-1 " type="button " data-g-config="{ 'eventLabel': 'focus mode - select apps to pause', 'moduleName': 'content-multimedia', 'eventCategory': 'module interactions', 'title': 'timer'} ">
-        <svg class="tab-timer__loader " viewBox="25 25 50 50 " aria-hidden="true ">
-          <circle class="circle " cx="50 " cy="50 " r="20 "></circle>
-          <circle style="--duration: 12.01s " class="bar " cx="50 " cy="50 " r="20 "></circle>
-        </svg>
-        <span class="tab-timer__label ">Select apps to pause</span>
-      </button>
-                        <button class="tab-timer__button is-7 " role="tab " aria-selected="false " aria-controls="timer-q-focus-mode-tab-2 " id="timer-q-focus-mode-2 " type="button " data-g-config="{ 'eventLabel':
-                            'focus mode - turn off distractions', 'moduleName': 'content-multimedia', 'eventCategory': 'module interactions', 'title': 'timer'} "
-                            tabindex="-1 ">
-        <svg class="tab-timer__loader " viewBox="25 25 50 50 " aria-hidden="true ">
-          <circle class="circle " cx="50 " cy="50 " r="20 "></circle>
-          <circle style="--duration: 11.01s " class="bar " cx="50 " cy="50 " r="20 "></circle>
-        </svg>
-        <span class="tab-timer__label ">Turn off distractions</span>
-      </button>
-                    </div>
-                </div>
-                <div class="content-multimedia__media-wrapper ">
-                    <div class="tab-timer__panel tab-timer__panel--q-focus-mode " tabindex="0 " role="tabpanel " id="timer-q-focus-mode-tab-1 " aria-labelledby="timer-q-focus-mode-1 " data-duration="12010 " aria-hidden="true ">
-
-
-
-                        <div class="is-video-frame tab-timer__video tab-timer__video--dark ">
-                            <img src="https://www.android.com/static/images/frames/frame-default.svg " alt=" ">
-
-                            <video aria-hidden="true " muted playsinline data-android-component="video-default " data-android-component-config="{&#39;autoplayMobile&#39;: True, &#39;delay&#39;: 2000, &#39;lazy&#39;: True, &#39;isOnTimer&#39;: True,
-                            &#39;contentId&#39;: &#39;cd0eea95437620f138cf3899dd3f1410&#39;, &#39;autoplay&#39;: True, &#39;autoplayObserver&#39;: {&#39;threshold&#39;: 0.1, &#39;rootMargin&#39;: &#39;0px 0px 0px 0px&#39;}, &#39;isOnModal&#39;: False} "
-                                data-c-video-id="q-focus-mode-app-selection-dark-video " data-c-video-sources=" {&#39;mobile&#39;: &#39;https://kstatic.googleusercontent.com/files/39b94d041a307077dde6fc86ab3e96c0ff70ac3d10d8e8fcc76029a8bb3a5a165a03aef3c1c90cb5c660c163fc57da696d2d8c96572ded1b0908a84ba13d6412&#39;,
-                            &#39;tablet&#39;: &#39;https://kstatic.googleusercontent.com/files/39b94d041a307077dde6fc86ab3e96c0ff70ac3d10d8e8fcc76029a8bb3a5a165a03aef3c1c90cb5c660c163fc57da696d2d8c96572ded1b0908a84ba13d6412&#39;, &#39;desktop&#39;: &#39;https://kstatic.googleusercontent.com/files/39b94d041a307077dde6fc86ab3e96c0ff70ac3d10d8e8fcc76029a8bb3a5a165a03aef3c1c90cb5c660c163fc57da696d2d8c96572ded1b0908a84ba13d6412&#39;}
-                            " data-c-video-poster-sources=" {&#39;mobile&#39;: &#39;https://lh3.googleusercontent.com/yFFiWzJKoZQi6KOmaACwjPRDFnyHvBvEBeyYqmwSC7fd20ptGL1DJ2E6xY3XSUWc_GS9WzzVSxFBvEam2WIW4gx8QL8MSlu-dipXzOc=w195&#39;, &#39;tablet&#39;: &#39;https://lh3.googleusercontent.com/yFFiWzJKoZQi6KOmaACwjPRDFnyHvBvEBeyYqmwSC7fd20ptGL1DJ2E6xY3XSUWc_GS9WzzVSxFBvEam2WIW4gx8QL8MSlu-dipXzOc=w280&#39;,
-                            &#39;desktop&#39;: &#39;https://lh3.googleusercontent.com/yFFiWzJKoZQi6KOmaACwjPRDFnyHvBvEBeyYqmwSC7fd20ptGL1DJ2E6xY3XSUWc_GS9WzzVSxFBvEam2WIW4gx8QL8MSlu-dipXzOc=w280&#39;} " data-c-video-preload>
-  </video>
-
-                        </div>
-
-
-
-                        <div class="is-video-frame tab-timer__video tab-timer__video--light ">
-                            <img src="https://www.android.com/static/images/frames/frame-default.svg " alt=" ">
-
-                            <video aria-hidden="true " muted playsinline data-android-component="video-default " data-android-component-config="{&#39;autoplayMobile&#39;: True, &#39;delay&#39;: 2000, &#39;lazy&#39;: True, &#39;isOnTimer&#39;: True,
-                            &#39;contentId&#39;: &#39;1e5da722b84ee9fc3456af89afc21724&#39;, &#39;autoplay&#39;: True, &#39;autoplayObserver&#39;: {&#39;threshold&#39;: 0.1, &#39;rootMargin&#39;: &#39;0px 0px 0px 0px&#39;}, &#39;isOnModal&#39;: False} "
-                                data-c-video-id="q-focus-mode-app-selection-light-video " data-c-video-sources=" {&#39;mobile&#39;: &#39;https://kstatic.googleusercontent.com/files/c4f599494f21d1147f646cfa1969729d62a132092f2b3370e40afcca6a87b23438c7c213b971e50b467e2345f44a50b1128f429a4b0563a8690c9f3181d80e95&#39;,
-                            &#39;tablet&#39;: &#39;https://kstatic.googleusercontent.com/files/c4f599494f21d1147f646cfa1969729d62a132092f2b3370e40afcca6a87b23438c7c213b971e50b467e2345f44a50b1128f429a4b0563a8690c9f3181d80e95&#39;, &#39;desktop&#39;: &#39;https://kstatic.googleusercontent.com/files/c4f599494f21d1147f646cfa1969729d62a132092f2b3370e40afcca6a87b23438c7c213b971e50b467e2345f44a50b1128f429a4b0563a8690c9f3181d80e95&#39;}
-                            " data-c-video-poster-sources=" {&#39;mobile&#39;: &#39;https://lh3.googleusercontent.com/DlNYVUSS4UnYOd6kTt1Wq2elAf7vmGOoRxSHDXbuEtpYpBaKOIMxLQiwNW85zDnFz-LUsI4xjphtiDzovOqf0RIL5Hl9O2yh3wvW=w195&#39;, &#39;tablet&#39;: &#39;https://lh3.googleusercontent.com/DlNYVUSS4UnYOd6kTt1Wq2elAf7vmGOoRxSHDXbuEtpYpBaKOIMxLQiwNW85zDnFz-LUsI4xjphtiDzovOqf0RIL5Hl9O2yh3wvW=w280&#39;,
-                            &#39;desktop&#39;: &#39;https://lh3.googleusercontent.com/DlNYVUSS4UnYOd6kTt1Wq2elAf7vmGOoRxSHDXbuEtpYpBaKOIMxLQiwNW85zDnFz-LUsI4xjphtiDzovOqf0RIL5Hl9O2yh3wvW=w280&#39;} " data-c-video-preload>
-  </video>
-
-                        </div>
-                    </div>
-                    <div class="tab-timer__panel tab-timer__panel--q-focus-mode hidden " tabindex="0 " role="tabpanel " id="timer-q-focus-mode-tab-2 " aria-labelledby="timer-q-focus-mode-2 " data-duration="11010 " aria-hidden="true ">
-
-
-
-                        <div class="is-video-frame tab-timer__video tab-timer__video--dark ">
-                            <img src="https://www.android.com/static/images/frames/frame-default.svg " alt=" ">
-
-                            <video aria-hidden="true " muted playsinline data-android-component="video-default " data-android-component-config="{&#39;autoplayMobile&#39;: True, &#39;delay&#39;: 2000, &#39;lazy&#39;: True, &#39;isOnTimer&#39;: True,
-                            &#39;contentId&#39;: &#39;fc00947a7c2520f77d97994427e81e45&#39;, &#39;autoplay&#39;: True, &#39;autoplayObserver&#39;: {&#39;threshold&#39;: 0.1, &#39;rootMargin&#39;: &#39;0px 0px 0px 0px&#39;}, &#39;isOnModal&#39;: False} "
-                                data-c-video-id="q-focus-mode-turn-off-dark-video " data-c-video-sources=" {&#39;mobile&#39;: &#39;https://kstatic.googleusercontent.com/files/1f5a6335ca66a6cb0951a49730317687473242ba86734bd8ad0b90cec1f3b80ac916a745bfff4c1cf22f6a6390df01d92a32d72ce68685ad7937dcb85471752e&#39;,
-                            &#39;tablet&#39;: &#39;https://kstatic.googleusercontent.com/files/1f5a6335ca66a6cb0951a49730317687473242ba86734bd8ad0b90cec1f3b80ac916a745bfff4c1cf22f6a6390df01d92a32d72ce68685ad7937dcb85471752e&#39;, &#39;desktop&#39;: &#39;https://kstatic.googleusercontent.com/files/1f5a6335ca66a6cb0951a49730317687473242ba86734bd8ad0b90cec1f3b80ac916a745bfff4c1cf22f6a6390df01d92a32d72ce68685ad7937dcb85471752e&#39;}
-                            " data-c-video-poster-sources=" {&#39;mobile&#39;: &#39;https://lh3.googleusercontent.com/DZvZ00wyffRZUHqe4D7j8hZqvJR-mEQ5LnwVaxTHXe15kFLZYFuza0ntO1T0GtIeRWHwy6piUb_2YoFBdniG2XFT0zkb6ewOXQtZ=w195&#39;, &#39;tablet&#39;: &#39;https://lh3.googleusercontent.com/DZvZ00wyffRZUHqe4D7j8hZqvJR-mEQ5LnwVaxTHXe15kFLZYFuza0ntO1T0GtIeRWHwy6piUb_2YoFBdniG2XFT0zkb6ewOXQtZ=w280&#39;,
-                            &#39;desktop&#39;: &#39;https://lh3.googleusercontent.com/DZvZ00wyffRZUHqe4D7j8hZqvJR-mEQ5LnwVaxTHXe15kFLZYFuza0ntO1T0GtIeRWHwy6piUb_2YoFBdniG2XFT0zkb6ewOXQtZ=w280&#39;} " data-c-video-preload>
-  </video>
-
-                        </div>
-
-
-
-                        <div class="is-video-frame tab-timer__video tab-timer__video--light ">
-                            <img src="https://www.android.com/static/images/frames/frame-default.svg " alt=" ">
-
-                            <video aria-hidden="true " muted playsinline data-android-component="video-default " data-android-component-config="{&#39;autoplayMobile&#39;: True, &#39;delay&#39;: 2000, &#39;lazy&#39;: True, &#39;isOnTimer&#39;: True,
-                            &#39;contentId&#39;: &#39;2adfaf237823e9affb07ad85df0427b6&#39;, &#39;autoplay&#39;: True, &#39;autoplayObserver&#39;: {&#39;threshold&#39;: 0.1, &#39;rootMargin&#39;: &#39;0px 0px 0px 0px&#39;}, &#39;isOnModal&#39;: False} "
-                                data-c-video-id="q-focus-mode-turn-off-light-video " data-c-video-sources=" {&#39;mobile&#39;: &#39;https://kstatic.googleusercontent.com/files/0a3815884c326512713cbf17c8cb72d416783663ef42781e33c5d69020fa8eba508a02172a623bf3f4759a6253bb5d89c9feea9aec6dc0642280c0d7441cf634&#39;,
-                            &#39;tablet&#39;: &#39;https://kstatic.googleusercontent.com/files/0a3815884c326512713cbf17c8cb72d416783663ef42781e33c5d69020fa8eba508a02172a623bf3f4759a6253bb5d89c9feea9aec6dc0642280c0d7441cf634&#39;, &#39;desktop&#39;: &#39;https://kstatic.googleusercontent.com/files/0a3815884c326512713cbf17c8cb72d416783663ef42781e33c5d69020fa8eba508a02172a623bf3f4759a6253bb5d89c9feea9aec6dc0642280c0d7441cf634&#39;}
-                            " data-c-video-poster-sources=" {&#39;mobile&#39;: &#39;https://lh3.googleusercontent.com/7lstobSTYXKrs4QtAVRJbd5g1wWB9xJH4EcZ4frCzDZn-YxwIAzYOLca2d7E7XAw1JVfmQiJuGGs81Z9MxwY-kEFl8d3cxeC-9A_=w195&#39;, &#39;tablet&#39;: &#39;https://lh3.googleusercontent.com/7lstobSTYXKrs4QtAVRJbd5g1wWB9xJH4EcZ4frCzDZn-YxwIAzYOLca2d7E7XAw1JVfmQiJuGGs81Z9MxwY-kEFl8d3cxeC-9A_=w280&#39;,
-                            &#39;desktop&#39;: &#39;https://lh3.googleusercontent.com/7lstobSTYXKrs4QtAVRJbd5g1wWB9xJH4EcZ4frCzDZn-YxwIAzYOLca2d7E7XAw1JVfmQiJuGGs81Z9MxwY-kEFl8d3cxeC-9A_=w280&#39;} " data-c-video-preload>
-  </video>
-
-                        </div>
-                    </div>
-                    <div class="background-shapes background-shapes--parallax ">
-
-                        <div class=" background-shapes__circle background-shapes__circle--secondary background-shapes__df2f8c6941375e3a6d910327db7e83e6 ">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-multimedia__copy-wrapper ">
-
-                    <span class="content-multimedia__icon is-icon "><svg class="icon--svg " aria-hidden="true ">
-    <use xlink:href="#ico-focus-mode "></use>
-  </svg></span>
-                    <h3 class="content-multimedia__heading is-3 is-heading ">Focus mode</h3>
-                    <div class="content-multimedia__body is-body-wrapper ">
-                        <div class="accordion accordion--is-1 " role="tablist " aria-multiselectable="true " data-c-accordion data-android-component="accordion-component " data-android-component-config="{&#34;small&#34;: {&#34;hideAccordion&#34;: false},
-                            &#34;large&#34;: {&#34;hideAccordion&#34;: true}, &#34;medium&#34;: {&#34;hideAccordion&#34;: true}, &#34;extra-large&#34;: {&#34;hideAccordion&#34;: true}} ">
-                            <div class="accordion__item ">
-                                <div class="accordion__item-head " id="q-focus-mode-featured-accordion_1 " role="tab " aria-expanded="false ">
-                                    <button class="accordion__item-button " aria-label="Focus on what’s in front of you. " aria-controls="q-focus-mode-featured-accordion_1_body " data-g-config="{ 'eventLabel': '', 'moduleName': 'content-multimedia',
-                            'eventCategory': 'module interactions', 'title': 'feature accordion'} ">
-          <h3>Focus on what’s in front of you.</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button>
-                                </div>
-                                <div class="accordion__item-body " id="q-focus-mode-featured-accordion_1_body " role="tabpanel " aria-labelledby="q-focus-mode-featured-accordion_1 " aria-expanded="false ">
-                                    <div class="accordion__item-content ">
-                                        <p>For getting in the zone and blocking out distractions. Focus mode is now in Beta and lets you select apps to pause temporarily. So if you want to turn off a distracting app to get something done, all you have to
-                                            do is tap.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&amp;hl=en_US " class="cta cta--is-2 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'try it now', 'moduleName':
-                            'content-multimedia', 'linkUrl': 'https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&hl=en_US', 'eventCategory': 'module interactions', 'title': 'cta'} ">Try it now<svg class="icon--svg cta__icon cta__external
-                            " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-                    </div>
-
-                </div>
-                <div class="content-multimedia__cta-wrapper "> <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&amp;hl=en_US " class="cta cta--is-2 " aria-label="try-it-now-q-focus-mode " target="_blank
-                            " rel="noopener " data-g-config="{ 'eventLabel': 'try it now', 'moduleName': 'content-multimedia', 'linkUrl': 'https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&hl=en_US', 'eventCategory':
-                            'module interactions', 'title': 'cta'} ">Try it now<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <section id="q-family-link " class="content-multimedia content-multimedia--secondary content-multimedia--timer " data-android-component="content-multimedia " data-android-component-animation="q-family-link ">
-            <div class="content-multimedia__wrapper grid " data-android-component="tab-timer ">
-                <div class="content-multimedia__timer-wrapper ">
-                    <div role="tablist " aria-label="q-family-link-timer " aria-hidden="true " aria-orientation="vertical " class="tab-timer__tablist "> <button class="tab-timer__button is-7 " role="tab " aria-selected="true " aria-controls="timer-q-family-link-tab-1
-                            " id="timer-q-family-link-1 " type="button " data-g-config="{ 'eventLabel': 'family link - set screen time limits', 'moduleName': 'content-multimedia', 'eventCategory': 'module interactions', 'title': 'timer'} ">
-        <svg class="tab-timer__loader " viewBox="25 25 50 50 " aria-hidden="true ">
-          <circle class="circle " cx="50 " cy="50 " r="20 "></circle>
-          <circle  class="bar " cx="50 " cy="50 " r="20 "></circle>
-        </svg>
-        <span class="tab-timer__label ">Set screen time limits</span>
-      </button>
-                        <button class="tab-timer__button is-7 " role="tab " aria-selected="false " aria-controls="timer-q-family-link-tab-2 " id="timer-q-family-link-2 " type="button " data-g-config="{ 'eventLabel':
-                            'family link - manage what content they see', 'moduleName': 'content-multimedia', 'eventCategory': 'module interactions', 'title': 'timer'} "
-                            tabindex="-1 ">
-        <svg class="tab-timer__loader " viewBox="25 25 50 50 " aria-hidden="true ">
-          <circle class="circle " cx="50 " cy="50 " r="20 "></circle>
-          <circle  class="bar " cx="50 " cy="50 " r="20 "></circle>
-        </svg>
-        <span class="tab-timer__label ">Manage what content they see</span>
-      </button>
-                        <button class="tab-timer__button is-7 " role="tab " aria-selected="false " aria-controls="timer-q-family-link-tab-3 " id="timer-q-family-link-3 " type="button " data-g-config="{ 'eventLabel':
-                            'family link - see device location', 'moduleName': 'content-multimedia', 'eventCategory': 'module interactions', 'title': 'timer'} "
-                            tabindex="-1 ">
-        <svg class="tab-timer__loader " viewBox="25 25 50 50 " aria-hidden="true ">
-          <circle class="circle " cx="50 " cy="50 " r="20 "></circle>
-          <circle  class="bar " cx="50 " cy="50 " r="20 "></circle>
-        </svg>
-        <span class="tab-timer__label ">See device location</span>
-      </button>
-                    </div>
-                </div>
-                <div class="content-multimedia__media-wrapper ">
-                    <div class="tab-timer__panel tab-timer__panel--q-family-link " tabindex="0 " role="tabpanel " id="timer-q-family-link-tab-1 " aria-labelledby="timer-q-family-link-1 " aria-hidden="true ">
-                        <section class="image-popout " data-android-component="animations-image-popout ">
-                            <cloud-image src="https://lh3.googleusercontent.com/MBHydTkk5k3TsTWzT9_0OdZapz38qfL_adSQPBhnw-ZMsJIEdl81oaE2PReaYIjwbYn3I6Qsyu7LTRbCw8jCiJGW8V0vdEra_H4C " alt="Set screen time limits " class="image-popout__main image-popout__main--light
-                            cloud-image--portrait "
-                                width="220 " md="280 " lg="280 " xl="280 ">
-                                <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/MBHydTkk5k3TsTWzT9_0OdZapz38qfL_adSQPBhnw-ZMsJIEdl81oaE2PReaYIjwbYn3I6Qsyu7LTRbCw8jCiJGW8V0vdEra_H4C=w220-v3 "
-      srcset="https://lh3.googleusercontent.com/MBHydTkk5k3TsTWzT9_0OdZapz38qfL_adSQPBhnw-ZMsJIEdl81oaE2PReaYIjwbYn3I6Qsyu7LTRbCw8jCiJGW8V0vdEra_H4C=w280-v3 280w,https://lh3.googleusercontent.com/MBHydTkk5k3TsTWzT9_0OdZapz38qfL_adSQPBhnw-ZMsJIEdl81oaE2PReaYIjwbYn3I6Qsyu7LTRbCw8jCiJGW8V0vdEra_H4C=w280-v3
-                            280w,https://lh3.googleusercontent.com/MBHydTkk5k3TsTWzT9_0OdZapz38qfL_adSQPBhnw-ZMsJIEdl81oaE2PReaYIjwbYn3I6Qsyu7LTRbCw8jCiJGW8V0vdEra_H4C=w280-v3 280w, "
-      sizes="(min-width: 1440px) 280px,(min-width: 1000px) 280px,(min-width: 600px) 280px, "
-      alt="Set screen time limits "
-    >
-      </noscript>
-                            </cloud-image>
-
-                            <cloud-image src="https://lh3.googleusercontent.com/mblMqvDqDymu5vXAJqwYkKRYhMlxunPeGe_1iSBLbKbWv-YhhdPByoP2JaI4PYajvWDuUM_Aw6sWw4CE7mcCdKHcWdUYLc2HHOHR " alt="Set screen time limits " class="image-popout__main image-popout__main--dark
-                            cloud-image--portrait "
-                                width="220 " md="280 " lg="280 " xl="280 ">
-                                <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/mblMqvDqDymu5vXAJqwYkKRYhMlxunPeGe_1iSBLbKbWv-YhhdPByoP2JaI4PYajvWDuUM_Aw6sWw4CE7mcCdKHcWdUYLc2HHOHR=w220-v3 "
-      srcset="https://lh3.googleusercontent.com/mblMqvDqDymu5vXAJqwYkKRYhMlxunPeGe_1iSBLbKbWv-YhhdPByoP2JaI4PYajvWDuUM_Aw6sWw4CE7mcCdKHcWdUYLc2HHOHR=w280-v3 280w,https://lh3.googleusercontent.com/mblMqvDqDymu5vXAJqwYkKRYhMlxunPeGe_1iSBLbKbWv-YhhdPByoP2JaI4PYajvWDuUM_Aw6sWw4CE7mcCdKHcWdUYLc2HHOHR=w280-v3
-                            280w,https://lh3.googleusercontent.com/mblMqvDqDymu5vXAJqwYkKRYhMlxunPeGe_1iSBLbKbWv-YhhdPByoP2JaI4PYajvWDuUM_Aw6sWw4CE7mcCdKHcWdUYLc2HHOHR=w280-v3 280w, "
-      sizes="(min-width: 1440px) 280px,(min-width: 1000px) 280px,(min-width: 600px) 280px, "
-      alt="Set screen time limits "
-    >
-      </noscript>
-                            </cloud-image>
-
-                            <div class="image-popout__secondary ">
-                                <cloud-image src="https://lh3.googleusercontent.com/NBRcJ4CYU-q7khIx2Ke08nEoaxWZBRR6my-Q-cJ3sMczq5bhcJu43Th4EqSlUxQvgJ1QL6eE_ii1pLYOY1kM4L4_uzVWFuisoWwElA " alt="Set screen time limits " class="image-popout__secondary--light
-                            cloud-image--landscape " width="260 "
-                                    md="350 " lg="350 " xl="350 ">
-                                    <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/NBRcJ4CYU-q7khIx2Ke08nEoaxWZBRR6my-Q-cJ3sMczq5bhcJu43Th4EqSlUxQvgJ1QL6eE_ii1pLYOY1kM4L4_uzVWFuisoWwElA=w260-v3 "
-      srcset="https://lh3.googleusercontent.com/NBRcJ4CYU-q7khIx2Ke08nEoaxWZBRR6my-Q-cJ3sMczq5bhcJu43Th4EqSlUxQvgJ1QL6eE_ii1pLYOY1kM4L4_uzVWFuisoWwElA=w350-v3 350w,https://lh3.googleusercontent.com/NBRcJ4CYU-q7khIx2Ke08nEoaxWZBRR6my-Q-cJ3sMczq5bhcJu43Th4EqSlUxQvgJ1QL6eE_ii1pLYOY1kM4L4_uzVWFuisoWwElA=w350-v3
-                            350w,https://lh3.googleusercontent.com/NBRcJ4CYU-q7khIx2Ke08nEoaxWZBRR6my-Q-cJ3sMczq5bhcJu43Th4EqSlUxQvgJ1QL6eE_ii1pLYOY1kM4L4_uzVWFuisoWwElA=w350-v3 350w, "
-      sizes="(min-width: 1440px) 350px,(min-width: 1000px) 350px,(min-width: 600px) 350px, "
-      alt="Set screen time limits "
-    >
-      </noscript>
-                                </cloud-image>
-
-                                <cloud-image src="https://lh3.googleusercontent.com/coSOg77AQc2Nsw9Ozdb4Ml0qqY81IYolQ_hLtnWjkRxtOErFvutBd1FdRiRLPFB6TaXT0tb9bokzFM3gF0c04f7VFBnDhBFCg58T-jg " alt="Set screen time limits " class="image-popout__secondary--dark
-                            cloud-image--landscape " width="260 "
-                                    md="350 " lg="350 " xl="350 ">
-                                    <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/coSOg77AQc2Nsw9Ozdb4Ml0qqY81IYolQ_hLtnWjkRxtOErFvutBd1FdRiRLPFB6TaXT0tb9bokzFM3gF0c04f7VFBnDhBFCg58T-jg=w260-v3 "
-      srcset="https://lh3.googleusercontent.com/coSOg77AQc2Nsw9Ozdb4Ml0qqY81IYolQ_hLtnWjkRxtOErFvutBd1FdRiRLPFB6TaXT0tb9bokzFM3gF0c04f7VFBnDhBFCg58T-jg=w350-v3 350w,https://lh3.googleusercontent.com/coSOg77AQc2Nsw9Ozdb4Ml0qqY81IYolQ_hLtnWjkRxtOErFvutBd1FdRiRLPFB6TaXT0tb9bokzFM3gF0c04f7VFBnDhBFCg58T-jg=w350-v3
-                            350w,https://lh3.googleusercontent.com/coSOg77AQc2Nsw9Ozdb4Ml0qqY81IYolQ_hLtnWjkRxtOErFvutBd1FdRiRLPFB6TaXT0tb9bokzFM3gF0c04f7VFBnDhBFCg58T-jg=w350-v3 350w, "
-      sizes="(min-width: 1440px) 350px,(min-width: 1000px) 350px,(min-width: 600px) 350px, "
-      alt="Set screen time limits "
-    >
-      </noscript>
-                                </cloud-image>
-
-                            </div>
-                        </section>
-                    </div>
-                    <div class="tab-timer__panel tab-timer__panel--q-family-link hidden " tabindex="0 " role="tabpanel " id="timer-q-family-link-tab-2 " aria-labelledby="timer-q-family-link-2 " aria-hidden="true ">
-                        <section class="image-popout " data-android-component="animations-image-popout ">
-                            <cloud-image src="https://lh3.googleusercontent.com/89jpU3LENZJgAYk1dkxS8SxXS3SU27b5XFO1gt7UGiClRIRJswzqIkQ4Q7H8_GhVtedcIQtUew8t8OSHDw__LDLyTxwEFyHXYb99Ow " alt="Manage what content they see " class="image-popout__main image-popout__main--light
-                            cloud-image--portrait "
-                                width="220 " md="280 " lg="280 " xl="280 ">
-                                <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/89jpU3LENZJgAYk1dkxS8SxXS3SU27b5XFO1gt7UGiClRIRJswzqIkQ4Q7H8_GhVtedcIQtUew8t8OSHDw__LDLyTxwEFyHXYb99Ow=w220-v3 "
-      srcset="https://lh3.googleusercontent.com/89jpU3LENZJgAYk1dkxS8SxXS3SU27b5XFO1gt7UGiClRIRJswzqIkQ4Q7H8_GhVtedcIQtUew8t8OSHDw__LDLyTxwEFyHXYb99Ow=w280-v3 280w,https://lh3.googleusercontent.com/89jpU3LENZJgAYk1dkxS8SxXS3SU27b5XFO1gt7UGiClRIRJswzqIkQ4Q7H8_GhVtedcIQtUew8t8OSHDw__LDLyTxwEFyHXYb99Ow=w280-v3
-                            280w,https://lh3.googleusercontent.com/89jpU3LENZJgAYk1dkxS8SxXS3SU27b5XFO1gt7UGiClRIRJswzqIkQ4Q7H8_GhVtedcIQtUew8t8OSHDw__LDLyTxwEFyHXYb99Ow=w280-v3 280w, "
-      sizes="(min-width: 1440px) 280px,(min-width: 1000px) 280px,(min-width: 600px) 280px, "
-      alt="Manage what content they see "
-    >
-      </noscript>
-                            </cloud-image>
-
-                            <cloud-image src="https://lh3.googleusercontent.com/8Q1_a7JpHfJB4VTfe-g5gynJKO69xj5dPCbAbC2CPW5HuS4CFGOoYM2DI1FDCWT0_wQcU7N-j3QSCEMcY5epd7_7F2BWjWM5E27Ljg " alt="Manage what content they see " class="image-popout__main image-popout__main--dark
-                            cloud-image--portrait "
-                                width="220 " md="280 " lg="280 " xl="280 ">
-                                <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/8Q1_a7JpHfJB4VTfe-g5gynJKO69xj5dPCbAbC2CPW5HuS4CFGOoYM2DI1FDCWT0_wQcU7N-j3QSCEMcY5epd7_7F2BWjWM5E27Ljg=w220-v3 "
-      srcset="https://lh3.googleusercontent.com/8Q1_a7JpHfJB4VTfe-g5gynJKO69xj5dPCbAbC2CPW5HuS4CFGOoYM2DI1FDCWT0_wQcU7N-j3QSCEMcY5epd7_7F2BWjWM5E27Ljg=w280-v3 280w,https://lh3.googleusercontent.com/8Q1_a7JpHfJB4VTfe-g5gynJKO69xj5dPCbAbC2CPW5HuS4CFGOoYM2DI1FDCWT0_wQcU7N-j3QSCEMcY5epd7_7F2BWjWM5E27Ljg=w280-v3
-                            280w,https://lh3.googleusercontent.com/8Q1_a7JpHfJB4VTfe-g5gynJKO69xj5dPCbAbC2CPW5HuS4CFGOoYM2DI1FDCWT0_wQcU7N-j3QSCEMcY5epd7_7F2BWjWM5E27Ljg=w280-v3 280w, "
-      sizes="(min-width: 1440px) 280px,(min-width: 1000px) 280px,(min-width: 600px) 280px, "
-      alt="Manage what content they see "
-    >
-      </noscript>
-                            </cloud-image>
-
-                            <div class="image-popout__secondary ">
-                                <cloud-image src="https://lh3.googleusercontent.com/maRJMwvt8oKoYAyL-1i8_lzIBgkw_VsQoeFMtoYVd1c7Eqd2CfsP4ionZ5P1qTMciOGRrMWQRgegEhodvPHrgJewNfTQKr5pAwbUAsk " alt="Manage what content they see " class="image-popout__secondary--light
-                            cloud-image " width="260 "
-                                    md="350 " lg="350 " xl="350 ">
-                                    <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/maRJMwvt8oKoYAyL-1i8_lzIBgkw_VsQoeFMtoYVd1c7Eqd2CfsP4ionZ5P1qTMciOGRrMWQRgegEhodvPHrgJewNfTQKr5pAwbUAsk=w260-v3 "
-      srcset="https://lh3.googleusercontent.com/maRJMwvt8oKoYAyL-1i8_lzIBgkw_VsQoeFMtoYVd1c7Eqd2CfsP4ionZ5P1qTMciOGRrMWQRgegEhodvPHrgJewNfTQKr5pAwbUAsk=w350-v3 350w,https://lh3.googleusercontent.com/maRJMwvt8oKoYAyL-1i8_lzIBgkw_VsQoeFMtoYVd1c7Eqd2CfsP4ionZ5P1qTMciOGRrMWQRgegEhodvPHrgJewNfTQKr5pAwbUAsk=w350-v3
-                            350w,https://lh3.googleusercontent.com/maRJMwvt8oKoYAyL-1i8_lzIBgkw_VsQoeFMtoYVd1c7Eqd2CfsP4ionZ5P1qTMciOGRrMWQRgegEhodvPHrgJewNfTQKr5pAwbUAsk=w350-v3 350w, "
-      sizes="(min-width: 1440px) 350px,(min-width: 1000px) 350px,(min-width: 600px) 350px, "
-      alt="Manage what content they see "
-    >
-      </noscript>
-                                </cloud-image>
-
-                                <cloud-image src="https://lh3.googleusercontent.com/v5oMjxMhXvDxAeq8gKZpQpcOAXUwMGzcGXPnQSAvHsZJFL5b_c2ufWxqmGOBp4vfz32G7TnENxN8tfT8eZnHGRR_PUg4xjtG_HSWpg " alt="Manage what content they see " class="image-popout__secondary--dark
-                            cloud-image " width="260 "
-                                    md="350 " lg="350 " xl="350 ">
-                                    <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/v5oMjxMhXvDxAeq8gKZpQpcOAXUwMGzcGXPnQSAvHsZJFL5b_c2ufWxqmGOBp4vfz32G7TnENxN8tfT8eZnHGRR_PUg4xjtG_HSWpg=w260-v3 "
-      srcset="https://lh3.googleusercontent.com/v5oMjxMhXvDxAeq8gKZpQpcOAXUwMGzcGXPnQSAvHsZJFL5b_c2ufWxqmGOBp4vfz32G7TnENxN8tfT8eZnHGRR_PUg4xjtG_HSWpg=w350-v3 350w,https://lh3.googleusercontent.com/v5oMjxMhXvDxAeq8gKZpQpcOAXUwMGzcGXPnQSAvHsZJFL5b_c2ufWxqmGOBp4vfz32G7TnENxN8tfT8eZnHGRR_PUg4xjtG_HSWpg=w350-v3
-                            350w,https://lh3.googleusercontent.com/v5oMjxMhXvDxAeq8gKZpQpcOAXUwMGzcGXPnQSAvHsZJFL5b_c2ufWxqmGOBp4vfz32G7TnENxN8tfT8eZnHGRR_PUg4xjtG_HSWpg=w350-v3 350w, "
-      sizes="(min-width: 1440px) 350px,(min-width: 1000px) 350px,(min-width: 600px) 350px, "
-      alt="Manage what content they see "
-    >
-      </noscript>
-                                </cloud-image>
-
-                            </div>
-                        </section>
-                    </div>
-                    <div class="tab-timer__panel tab-timer__panel--q-family-link hidden " tabindex="0 " role="tabpanel " id="timer-q-family-link-tab-3 " aria-labelledby="timer-q-family-link-3 " aria-hidden="true ">
-                        <section class="image-popout " data-android-component="animations-image-popout ">
-                            <cloud-image src="https://lh3.googleusercontent.com/83bJF3QFLzeVv1QM75Axo_iZiiLnc3pDPAU1DVmrHmKn7g-vvZXOdUOmjtdVAfmzjh0WbnhDqMlVfu_DyxDx0hVFYoYcEkl09OkZExU " alt="See device location " class="image-popout__main image-popout__main--light
-                            cloud-image--portrait "
-                                width="220 " md="280 " lg="280 " xl="280 ">
-                                <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/83bJF3QFLzeVv1QM75Axo_iZiiLnc3pDPAU1DVmrHmKn7g-vvZXOdUOmjtdVAfmzjh0WbnhDqMlVfu_DyxDx0hVFYoYcEkl09OkZExU=w220-v3 "
-      srcset="https://lh3.googleusercontent.com/83bJF3QFLzeVv1QM75Axo_iZiiLnc3pDPAU1DVmrHmKn7g-vvZXOdUOmjtdVAfmzjh0WbnhDqMlVfu_DyxDx0hVFYoYcEkl09OkZExU=w280-v3 280w,https://lh3.googleusercontent.com/83bJF3QFLzeVv1QM75Axo_iZiiLnc3pDPAU1DVmrHmKn7g-vvZXOdUOmjtdVAfmzjh0WbnhDqMlVfu_DyxDx0hVFYoYcEkl09OkZExU=w280-v3
-                            280w,https://lh3.googleusercontent.com/83bJF3QFLzeVv1QM75Axo_iZiiLnc3pDPAU1DVmrHmKn7g-vvZXOdUOmjtdVAfmzjh0WbnhDqMlVfu_DyxDx0hVFYoYcEkl09OkZExU=w280-v3 280w, "
-      sizes="(min-width: 1440px) 280px,(min-width: 1000px) 280px,(min-width: 600px) 280px, "
-      alt="See device location "
-    >
-      </noscript>
-                            </cloud-image>
-
-                            <cloud-image src="https://lh3.googleusercontent.com/CmJZ-dvO5Fnd25B4We3fT2k3NznXaLab7WD_ZShZrKqnI85e96RKXVj1SNdQOP-5TBDJUoMcBKTWqV1rEcsnH60kqTWjSupV_799 " alt="See device location " class="image-popout__main image-popout__main--dark
-                            cloud-image--portrait "
-                                width="220 " md="280 " lg="280 " xl="280 ">
-                                <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/CmJZ-dvO5Fnd25B4We3fT2k3NznXaLab7WD_ZShZrKqnI85e96RKXVj1SNdQOP-5TBDJUoMcBKTWqV1rEcsnH60kqTWjSupV_799=w220-v3 "
-      srcset="https://lh3.googleusercontent.com/CmJZ-dvO5Fnd25B4We3fT2k3NznXaLab7WD_ZShZrKqnI85e96RKXVj1SNdQOP-5TBDJUoMcBKTWqV1rEcsnH60kqTWjSupV_799=w280-v3 280w,https://lh3.googleusercontent.com/CmJZ-dvO5Fnd25B4We3fT2k3NznXaLab7WD_ZShZrKqnI85e96RKXVj1SNdQOP-5TBDJUoMcBKTWqV1rEcsnH60kqTWjSupV_799=w280-v3
-                            280w,https://lh3.googleusercontent.com/CmJZ-dvO5Fnd25B4We3fT2k3NznXaLab7WD_ZShZrKqnI85e96RKXVj1SNdQOP-5TBDJUoMcBKTWqV1rEcsnH60kqTWjSupV_799=w280-v3 280w, "
-      sizes="(min-width: 1440px) 280px,(min-width: 1000px) 280px,(min-width: 600px) 280px, "
-      alt="See device location "
-    >
-      </noscript>
-                            </cloud-image>
-
-                            <div class="image-popout__secondary ">
-                                <cloud-image src="https://lh3.googleusercontent.com/y3Im1uweYg3Plcf_CSAKATV1DOUxrlXXYTkeUGDs8JZaeu9w_J_Q9buEodKMUQVP_z5WWLojFwzciyJ7Z31DUZIdM-ISmqVJFPDR0w4 " alt="See device location " class="image-popout__secondary--light
-                            cloud-image " width="260 " md="350 "
-                                    lg="350 " xl="350 ">
-                                    <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/y3Im1uweYg3Plcf_CSAKATV1DOUxrlXXYTkeUGDs8JZaeu9w_J_Q9buEodKMUQVP_z5WWLojFwzciyJ7Z31DUZIdM-ISmqVJFPDR0w4=w260-v3 "
-      srcset="https://lh3.googleusercontent.com/y3Im1uweYg3Plcf_CSAKATV1DOUxrlXXYTkeUGDs8JZaeu9w_J_Q9buEodKMUQVP_z5WWLojFwzciyJ7Z31DUZIdM-ISmqVJFPDR0w4=w350-v3 350w,https://lh3.googleusercontent.com/y3Im1uweYg3Plcf_CSAKATV1DOUxrlXXYTkeUGDs8JZaeu9w_J_Q9buEodKMUQVP_z5WWLojFwzciyJ7Z31DUZIdM-ISmqVJFPDR0w4=w350-v3
-                            350w,https://lh3.googleusercontent.com/y3Im1uweYg3Plcf_CSAKATV1DOUxrlXXYTkeUGDs8JZaeu9w_J_Q9buEodKMUQVP_z5WWLojFwzciyJ7Z31DUZIdM-ISmqVJFPDR0w4=w350-v3 350w, "
-      sizes="(min-width: 1440px) 350px,(min-width: 1000px) 350px,(min-width: 600px) 350px, "
-      alt="See device location "
-    >
-      </noscript>
-                                </cloud-image>
-
-                                <cloud-image src="https://lh3.googleusercontent.com/ep5vrZD-9GPcV3pZ07XNKR6Sp_MnSjv8DrvxxO0B_NjM98yxTVPvYWCOMxE9OU8_aoRmLEqwudsjcSl0AM5A-6jy8rbduxWcetRa " alt="See device location " class="image-popout__secondary--dark
-                            cloud-image " width="260 " md="350 "
-                                    lg="350 " xl="350 ">
-                                    <noscript>
-        <img
-      src="https://lh3.googleusercontent.com/ep5vrZD-9GPcV3pZ07XNKR6Sp_MnSjv8DrvxxO0B_NjM98yxTVPvYWCOMxE9OU8_aoRmLEqwudsjcSl0AM5A-6jy8rbduxWcetRa=w260-v3 "
-      srcset="https://lh3.googleusercontent.com/ep5vrZD-9GPcV3pZ07XNKR6Sp_MnSjv8DrvxxO0B_NjM98yxTVPvYWCOMxE9OU8_aoRmLEqwudsjcSl0AM5A-6jy8rbduxWcetRa=w350-v3 350w,https://lh3.googleusercontent.com/ep5vrZD-9GPcV3pZ07XNKR6Sp_MnSjv8DrvxxO0B_NjM98yxTVPvYWCOMxE9OU8_aoRmLEqwudsjcSl0AM5A-6jy8rbduxWcetRa=w350-v3
-                            350w,https://lh3.googleusercontent.com/ep5vrZD-9GPcV3pZ07XNKR6Sp_MnSjv8DrvxxO0B_NjM98yxTVPvYWCOMxE9OU8_aoRmLEqwudsjcSl0AM5A-6jy8rbduxWcetRa=w350-v3 350w, "
-      sizes="(min-width: 1440px) 350px,(min-width: 1000px) 350px,(min-width: 600px) 350px, "
-      alt="See device location "
-    >
-      </noscript>
-                                </cloud-image>
-
-                            </div>
-                        </section>
-                    </div>
-                    <div class="background-shapes background-shapes--parallax ">
-
-                        <div class=" background-shapes__circle background-shapes__circle--secondary background-shapes__15b23a7a3f21dfe832119d58568d679b ">
-                        </div>
-                    </div>
-                </div>
-                <div class="content-multimedia__copy-wrapper ">
-
-                    <span class="content-multimedia__icon is-icon "><svg class="icon--svg " aria-hidden="true ">
-    <use xlink:href="#ico-family-link "></use>
-  </svg></span>
-                    <h3 class="content-multimedia__heading is-3 is-heading ">Family Link</h3>
-                    <div class="content-multimedia__body is-body-wrapper ">
-                        <div class="accordion accordion--is-1 " role="tablist " aria-multiselectable="true " data-c-accordion data-android-component="accordion-component " data-android-component-config="{&#34;small&#34;: {&#34;hideAccordion&#34;: false},
-                            &#34;large&#34;: {&#34;hideAccordion&#34;: true}, &#34;medium&#34;: {&#34;hideAccordion&#34;: true}, &#34;extra-large&#34;: {&#34;hideAccordion&#34;: true}} ">
-                            <div class="accordion__item ">
-                                <div class="accordion__item-head " id="q-family-link-featured-accordion_1 " role="tab " aria-expanded="false ">
-                                    <button class="accordion__item-button " aria-label="Set digital ground rules and help make healthy habits. " aria-controls="q-family-link-featured-accordion_1_body " data-g-config="{ 'eventLabel': '', 'moduleName':
-                            'content-multimedia', 'eventCategory': 'module interactions', 'title': 'feature accordion'} ">
-          <h3>Set digital ground rules and help make healthy habits.</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button>
-                                </div>
-                                <div class="accordion__item-body " id="q-family-link-featured-accordion_1_body " role="tabpanel " aria-labelledby="q-family-link-featured-accordion_1 " aria-expanded="false ">
-                                    <div class="accordion__item-content ">
-                                        <p>Help guide your kids as they learn, play, and explore online. You can set screen time limits, view app activity, manage apps and content restrictions, and see where they are.<sup>2</sup></p>
-                                    </div> -->
-        <!-- </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section> -->
-
-
-        <!-- <section id="q-digital-wellbeing-link " class="cta-block cta-block--primary grid ">
-            <div class="cta-block__wrapper ">
-                <a href="https://wellbeing.google/tools/?utm_source=android_platforms&amp;utm_medium=Referral " class="cta cta--is-2 " aria-label="see-more-digital-wellbeing-features-q-digital-wellbeing-link " target="_blank " rel="noopener
-                            " data-g-config="{ 'eventLabel': 'see more digital wellbeing features', 'moduleName': 'cta-content-block', 'linkUrl': 'https://wellbeing.google/tools/?utm_source=android_platforms&utm_medium=Referral', 'eventCategory': 'module interactions',
-                            'title': 'cta'} ">See more Digital Wellbeing features<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-            </div>
-        </section> -->
-
-        <!-- <section class="feature-list-default grid ">
-            <h2 class="feature-list-default__heading is-2 ">Plus a whole lot more.</h2>
-            <p class="feature-list-default__copy is-copy-m ">Android has new features across everything from your camera to your settings. There’s something for you.</p>
-            <div class="feature-list-default__component-wrapper ">
-                <div class="accordion accordion--is-2 " role="tablist " aria-multiselectable="true " data-c-accordion data-android-component="accordion-component " data-android-component-config="{&#34;small&#34;: {&#34;hideAccordion&#34;: false, &#34;autoClose&#34;:
-                            false}, &#34;large&#34;: {&#34;hideAccordion&#34;: false, &#34;autoClose&#34;: false}, &#34;medium&#34;: {&#34;hideAccordion&#34;: false, &#34;autoClose&#34;: false}, &#34;extra-large&#34;: {&#34;hideAccordion&#34;: false, &#34;autoClose&#34;:
-                            false}} ">
-                    <div class="accordion__item ">
-                        <div class="accordion__item-head " id="_1 " role="tab " aria-expanded="false ">
-                            <button class="accordion__item-button " aria-label="Accessibility " aria-controls="_1_body " data-g-config="{ 'eventLabel': '', 'moduleName': 'feature-list-default', 'eventCategory': 'module interactions', 'title':
-                            'accessibility feature accordion'} ">
-          <h3>Accessibility</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button>
-                        </div>
-                        <div class="accordion__item-body " id="_1_body " role="tabpanel " aria-labelledby="_1 " aria-expanded="false ">
-                            <div class="accordion__item-content ">
-                                <p><strong>Live Caption</strong>With a single tap, Live Caption automatically captions videos, podcasts, and audio messages—even stuff you record yourself. Without ever needing wifi or cell phone data.</p>
-                                <p><strong>Hearing aid support</strong>Android 10 now has built-in support for streaming media and calls directly to hearing aids. Using bluetooth low energy so that you can stream all week.</p>
-                                <p><strong>Live Transcribe</strong>Real-time transcriptions for the world around you. Now with sound events that show you when someone is clapping, a dog is barking, someone is whistling, and more.</p>
-                                <p><strong>Sound Amplifier</strong>Filter out background noise and amplify sound according to frequencies personalized to your hearing. Now as a standalone app with a sound visualizer so you can see the sound going on around
-                                    you.
-                                </p>
-                                <p><strong>Accessibility Timeouts</strong>Give yourself more time to interact with your device features. Like the control panel, volume control, and more.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item ">
-                        <div class="accordion__item-head " id="_2 " role="tab " aria-expanded="false ">
-                            <button class="accordion__item-button " aria-label="Camera " aria-controls="_2_body " data-g-config="{ 'eventLabel': '', 'moduleName': 'feature-list-default', 'eventCategory': 'module interactions', 'title':
-                            'camera feature accordion'} ">
-          <h3>Camera</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button>
-                        </div>
-                        <div class="accordion__item-body " id="_2_body " role="tabpanel " aria-labelledby="_2 " aria-expanded="false ">
-                            <div class="accordion__item-content ">
-                                <p><strong>HEIF Imaging</strong>Support for new file format (.heic) to save still images.</p>
-                                <p><strong>Dynamic depth</strong>New file format to capture, store, and share depth photos (including AR) across Android.</p>
-                                <p><strong>Monochrome camera support</strong>New camera type support which enables app developers to get monochrome output natively on devices that list this capability.</p>
-                                <p><strong>Privacy improvements</strong>Some camera characteristics now require camera permissions prior to be accessed.</p>
-                                <p><strong>Recommended stream configurations</strong>Developers will be able poll preferable stream configurations on devices that list this capability.</p>
-                                <p><strong>Secure camera framework</strong>Enables phone manufacturers to transport camera frames in a secure manner.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item ">
-                        <div class="accordion__item-head " id="_3 " role="tab " aria-expanded="false ">
-                            <button class="accordion__item-button " aria-label="Digital Wellbeing " aria-controls="_3_body " data-g-config="{ 'eventLabel': '', 'moduleName': 'feature-list-default', 'eventCategory': 'module interactions', 'title':
-                            'digital wellbeing feature accordion'} ">
-          <h3>Digital Wellbeing</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button>
-                        </div>
-                        <div class="accordion__item-body " id="_3_body " role="tabpanel " aria-labelledby="_3 " aria-expanded="false ">
-                            <div class="accordion__item-content ">
-                                <p><strong>Digital Wellbeing & parental controls</strong>Easily access Digital Wellbeing & parental controls within your phone's Settings menu to create and maintain healthy digital habits for the whole family.</p>
-                                <p><strong>Site timers</strong>In addition to setting app timers, you can see how you spend your time and set daily limits for individual websites. All within the same Digital Wellbeing dashboard.</p>
-                                <p><strong>Focus mode</strong>For getting in the zone and minimizing distractions. Turn on Focus mode with a single tap to pause apps that you’ve selected.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item ">
-                        <div class="accordion__item-head " id="_4 " role="tab " aria-expanded="false ">
-                            <button class="accordion__item-button " aria-label="Enterprise " aria-controls="_4_body " data-g-config="{ 'eventLabel': '', 'moduleName': 'feature-list-default', 'eventCategory': 'module interactions', 'title':
-                            'enterprise feature accordion'} ">
-          <h3>Enterprise</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button>
-                        </div>
-                        <div class="accordion__item-body " id="_4_body " role="tabpanel " aria-labelledby="_4 " aria-expanded="false ">
-                            <div class="accordion__item-content ">
-                                <p><strong>Improved provisioning tools for the work profile</strong>You can now provision directly into a work profile right from the setup wizard.</p>
-                                <p><strong>Device admin for enterprise deprecation</strong>The removal of device admin for enterprise purposes enables more private and secure offerings such as the work profile.</p>
-                                <p><strong>Separate input method for work and personal</strong>You can now use your favorite keyboard in the personal profile while IT can require a separate input method for the work profile.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item ">
-                        <div class="accordion__item-head " id="_5 " role="tab " aria-expanded="false ">
-                            <button class="accordion__item-button " aria-label="Messaging & Sharing " aria-controls="_5_body " data-g-config="{ 'eventLabel': '', 'moduleName': 'feature-list-default', 'eventCategory': 'module interactions', 'title':
-                            'messaging & sharing feature accordion'} ">
-          <h3>Messaging & Sharing</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button>
-                        </div>
-                        <div class="accordion__item-body " id="_5_body " role="tabpanel " aria-labelledby="_5 " aria-expanded="false ">
-                            <div class="accordion__item-content ">
-                                <p><strong>Suggested actions in notifications</strong>Android can now generate suggested replies and actions for all messaging notifications. And developers will be able to opt out or supply their own suggestions.</p>
-                                <p><strong>New emojis</strong>Android 10 introduces 65 new emojis, including gender-inclusive designs for emoji like haircut, weightlifting and sauna.</p>
-                                <p><strong>Share Wi-fi</strong>Now, you can share your Wi-Fi details with guests via a QR code while keeping your password secure.</p>
-                                <p><strong>Improved sharesheet</strong>It is now quicker and easier to share content from apps with your contacts. You can also preview content before you send it.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item ">
-                        <div class="accordion__item-head " id="_6 " role="tab " aria-expanded="false ">
-                            <button class="accordion__item-button " aria-label="Performance " aria-controls="_6_body " data-g-config="{ 'eventLabel': '', 'moduleName': 'feature-list-default', 'eventCategory': 'module interactions', 'title':
-                            'performance feature accordion'} ">
-          <h3>Performance</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button>
-                        </div>
-                        <div class="accordion__item-body " id="_6_body " role="tabpanel " aria-labelledby="_6 " aria-expanded="false ">
-                            <div class="accordion__item-content ">
-                                <p><strong>Adaptive Battery improvements</strong>Launched in Android 9, this feature uses machine learning to predict which apps you'll use in the next few hours and which you likely won't, so your phone only spends battery
-                                    power on the apps you care about.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item ">
-                        <div class="accordion__item-head " id="_7 " role="tab " aria-expanded="false ">
-                            <button class="accordion__item-button " aria-label="Security & Privacy " aria-controls="_7_body " data-g-config="{ 'eventLabel': '', 'moduleName': 'feature-list-default', 'eventCategory': 'module interactions', 'title':
-                            'security & privacy feature accordion'} ">
-          <h3>Security & Privacy</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button>
-                        </div>
-                        <div class="accordion__item-body " id="_7_body " role="tabpanel " aria-labelledby="_7 " aria-expanded="false ">
-                            <div class="accordion__item-content ">
-                                <p><strong>New location controls and reminder</strong>You now have more control over how, or if, your location data is shared. When an app asks permission to access your location information, you can now award it access all
-                                    the time, while the app is in use, or deny it access. If an app has access to location data all the time, then Android will remind you with a one-time notification. Want to change that access? Simply go to your settings.</p>
-                                <p><strong>Android Emergency Location Services</strong>Android helps keeps you safe when urgent situations occur. "ELS " can send enhanced location directly from Android handsets to emergency services when an emergency call
-                                    is placed.</p>
-                                <p><strong>Google Play system updates</strong>Android devices already get regular security updates. And in Android 10, you'll get them even faster and easier. With Google Play system updates, important Security and Privacy
-                                    fixes can now be sent directly to your phone from Google Play, just the same way all your other apps update. So you get these fixes as soon as they are available.</p>
-                                <p><strong>Privacy settings</strong>You can now view and control all of your privacy settings — from App Permissions to Web & App Activity to Location History — from one, simple place in your settings.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item ">
-                        <div class="accordion__item-head " id="_8 " role="tab " aria-expanded="false ">
-                            <button class="accordion__item-button " aria-label="Usability Enhancements " aria-controls="_8_body " data-g-config="{ 'eventLabel': '', 'moduleName': 'feature-list-default', 'eventCategory': 'module interactions',
-                            'title': 'usability enhancements feature accordion'} ">
-          <h3>Usability Enhancements</h3><svg class="icon--svg accordion__item-icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg></button>
-                        </div>
-                        <div class="accordion__item-body " id="_8_body " role="tabpanel " aria-labelledby="_8 " aria-expanded="false ">
-                            <div class="accordion__item-content ">
-                                <p><strong>Gesture navigation</strong>New ways to navigate around your phone without using any buttons. Go backwards and forwards, pull up the homescreen, and swipe up to see your open apps.</p>
-                                <p><strong>Quick wallet access</strong>Quickly access your credit cards stored in Google Pay, boarding passes, and emergency info through the Power menu.</p>
-                                <p><strong>Contaminant detection</strong>If moisture or debris is detected in your USB port, a notification will be sent to you and accessories will not function.</p>
-                                <p><strong>Priority notifications</strong>With Android 10, you can organize and prioritize notifications by marking them as "silent " or "alerting ". Silent and alerting notifications are separated in the notifications bar,
-                                    making it easier for you to see what needs your attention.</p>
-                                <p><strong>Manage notifications</strong>It's easier to find and manage notifications Settings straight from the notifications panel. Just pull it down, scroll to the bottom and tap manage in the bottom left hand corner.</p>
-                                <p><strong>Dark theme</strong>You can now turn your UI and first-party apps dark by activating Dark theme in Settings. This is easy on the eyes, and helps saves battery, too.</p>
-                                <p><strong>Android Auto</strong>Android Auto now comes built-in, so you can simply plug in your phone and start using Android on your car's display. No app download needed.</p>
-                                <p><strong>Dynamic System Updates</strong>This features allows developers to load different system image on their device for testing without affecting their original system image.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section> -->
 
     </main>
 
 
 
 
-    <!-- <footer data-android-component="footer-default " class="footer-default ">
-        <div class="grid ">
-            <ul role="menubar " class="footer-default__nav ">
-                <li role="menuitem " class="footer-default__item ">
-                    <h3 class="footer-default__title js-nav-item " aria-expanded="false " aria-controls="for-developers-section " data-g-config="{ 'eventLabel': 'for developers', 'moduleName': 'footer', 'eventCategory': 'footer', 'title':
-                            'for developers accordion'} ">
-                        <button class="footer-default__button " id="for-developers-btn ">
-          For developers
-              <svg class="icon--svg footer-default__cross " aria-hidden="true ">
-    <use xlink:href="#ico-cross "></use>
-  </svg>
-
-        </button>
-                    </h3>
-                    <ul id="for-developers-section " class="footer-default__nav-subitem js-subitem-container " aria-labelledby="for-developers-btn ">
-                        <li class="footer-default__nav-list ">
-                            <a href="https://developer.android.com/ " class="cta cta--is-4 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'developer resources', 'moduleName': 'footer', 'linkUrl': 'https://developer.android.com/',
-                            'eventCategory': 'footer', 'title': 'for developers'} ">Developer Resources<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://developer.android.com/studio/ " class="cta cta--is-4 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'android studio and sdk', 'moduleName': 'footer', 'linkUrl':
-                            'https://developer.android.com/studio/', 'eventCategory': 'footer', 'title': 'for developers'} ">Android Studio and SDK<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://source.android.com/ " class="cta cta--is-4 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'android open source project', 'moduleName': 'footer', 'linkUrl': 'https://source.android.com/',
-                            'eventCategory': 'footer', 'title': 'for developers'} ">Android Open Source Project<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                    </ul>
-                </li>
-
-                <li role="menuitem " class="footer-default__item ">
-                    <h3 class="footer-default__title js-nav-item " aria-expanded="false " aria-controls="for-enterprise-section " data-g-config="{ 'eventLabel': 'for enterprise', 'moduleName': 'footer', 'eventCategory': 'footer', 'title':
-                            'for enterprise accordion'} ">
-                        <button class="footer-default__button " id="for-enterprise-btn ">
-          For enterprise
-              <svg class="icon--svg footer-default__cross " aria-hidden="true ">
-    <use xlink:href="#ico-cross "></use>
-  </svg>
-
-        </button>
-                    </h3>
-                    <ul id="for-enterprise-section " class="footer-default__nav-subitem js-subitem-container " aria-labelledby="for-enterprise-btn ">
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.android.com/enterprise/ " class="cta cta--is-4 " data-g-config="{ 'eventLabel': 'enterprise overview', 'moduleName': 'footer', 'linkUrl': '/enterprise/', 'eventCategory': 'footer', 'title':
-                            'for enterprise'} ">Enterprise Overview<svg class="icon--svg cta__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.android.com/enterprise/management/ " class="cta cta--is-4 " data-g-config="{ 'eventLabel': 'management', 'moduleName': 'footer', 'linkUrl': '/enterprise/management/', 'eventCategory': 'footer',
-                            'title': 'for enterprise'} ">Management<svg class="icon--svg cta__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.android.com/enterprise/security/ " class="cta cta--is-4 " data-g-config="{ 'eventLabel': 'security', 'moduleName': 'footer', 'linkUrl': '/enterprise/security/', 'eventCategory': 'footer', 'title':
-                            'for enterprise'} ">Security<svg class="icon--svg cta__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.android.com/enterprise/devices/ " class="cta cta--is-4 " data-g-config="{ 'eventLabel': 'enterprise devices', 'moduleName': 'footer', 'linkUrl': '/enterprise/devices/', 'eventCategory': 'footer',
-                            'title': 'for enterprise'} ">Enterprise Devices<svg class="icon--svg cta__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.android.com/enterprise/recommended/ " class="cta cta--is-4 " data-g-config="{ 'eventLabel': 'android enterprise recommended', 'moduleName': 'footer', 'linkUrl': '/enterprise/recommended/',
-                            'eventCategory': 'footer', 'title': 'for enterprise'} ">Android Enterprise Recommended<svg class="icon--svg cta__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.android.com/enterprise/resources/ " class="cta cta--is-4 " data-g-config="{ 'eventLabel': 'resources', 'moduleName': 'footer', 'linkUrl': '/enterprise/resources/', 'eventCategory': 'footer', 'title':
-                            'for enterprise'} ">Resources<svg class="icon--svg cta__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://androidenterprisepartners.withgoogle.com/ " class="cta cta--is-4 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'solutions directory', 'moduleName': 'footer', 'linkUrl':
-                            'https://androidenterprisepartners.withgoogle.com/', 'eventCategory': 'footer', 'title': 'for enterprise'} ">Solutions Directory<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                    </ul>
-                </li>
-
-                <li role="menuitem " class="footer-default__item ">
-                    <h3 class="footer-default__title js-nav-item " aria-expanded="false " aria-controls="for-the-press-section " data-g-config="{ 'eventLabel': 'for the press', 'moduleName': 'footer', 'eventCategory': 'footer', 'title':
-                            'for the press accordion'} ">
-                        <button class="footer-default__button " id="for-the-press-btn ">
-          For the press
-              <svg class="icon--svg footer-default__cross " aria-hidden="true ">
-    <use xlink:href="#ico-cross "></use>
-  </svg>
-
-        </button>
-                    </h3>
-                    <ul id="for-the-press-section " class="footer-default__nav-subitem js-subitem-container " aria-labelledby="for-the-press-btn ">
-                        <li class="footer-default__nav-list ">
-                            <a href="https://blog.google/products/android/ " class="cta cta--is-4 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'android blog', 'moduleName': 'footer', 'linkUrl':
-                            'https://blog.google/products/android/', 'eventCategory': 'footer', 'title': 'for the press'} ">Android Blog<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.blog.google/press/ " class="cta cta--is-4 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'press corner', 'moduleName': 'footer', 'linkUrl': 'https://www.blog.google/press/',
-                            'eventCategory': 'footer', 'title': 'for the press'} ">Press Corner<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.android.com/everyone/ " class="cta cta--is-4 " data-g-config="{ 'eventLabel': 'android is for everyone', 'moduleName': 'footer', 'linkUrl': '/everyone/', 'eventCategory': 'footer', 'title':
-                            'for the press'} ">Android is for everyone<svg class="icon--svg cta__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.blog.google/press/ " class="cta cta--is-4 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'contact press team', 'moduleName': 'footer', 'linkUrl': 'https://www.blog.google/press/',
-                            'eventCategory': 'footer', 'title': 'for the press'} ">Contact Press Team<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                    </ul>
-                </li>
-
-                <li role="menuitem " class="footer-default__item ">
-                    <h3 class="footer-default__title js-nav-item " aria-expanded="false " aria-controls="the-ecosystem-section " data-g-config="{ 'eventLabel': 'the ecosystem', 'moduleName': 'footer', 'eventCategory': 'footer', 'title':
-                            'the ecosystem accordion'} ">
-                        <button class="footer-default__button " id="the-ecosystem-btn ">
-          The ecosystem
-              <svg class="icon--svg footer-default__cross " aria-hidden="true ">
-    <use xlink:href="#ico-cross "></use>
-  </svg>
-
-        </button>
-                    </h3>
-                    <ul id="the-ecosystem-section " class="footer-default__nav-subitem js-subitem-container " aria-labelledby="the-ecosystem-btn ">
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.android.com/auto/ " class="cta cta--is-4 " data-g-config="{ 'eventLabel': 'android auto', 'moduleName': 'footer', 'linkUrl': '/auto/', 'eventCategory': 'footer', 'title': 'the ecosystem'}
-                            ">Android Auto<svg class="icon--svg cta__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.android.com/tv/ " class="cta cta--is-4 " data-g-config="{ 'eventLabel': 'android tv', 'moduleName': 'footer', 'linkUrl': '/tv/', 'eventCategory': 'footer', 'title': 'the ecosystem'}
-                            ">Android TV<svg class="icon--svg cta__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://wearos.google.com/#hands-free-help " class="cta cta--is-4 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'wear os by google', 'moduleName': 'footer', 'linkUrl':
-                            'https://wearos.google.com/#hands-free-help', 'eventCategory': 'footer', 'title': 'the ecosystem'} ">Wear OS by Google<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                    </ul>
-                </li>
-
-                <li role="menuitem " class="footer-default__item ">
-                    <h3 class="footer-default__title js-nav-item " aria-expanded="false " aria-controls="support-section " data-g-config="{ 'eventLabel': 'support', 'moduleName': 'footer', 'eventCategory': 'footer', 'title': 'support accordion'} ">
-                        <button class="footer-default__button " id="support-btn ">
-          Support
-              <svg class="icon--svg footer-default__cross " aria-hidden="true ">
-    <use xlink:href="#ico-cross "></use>
-  </svg>
-
-        </button>
-                    </h3>
-                    <ul id="support-section " class="footer-default__nav-subitem js-subitem-container " aria-labelledby="support-btn ">
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.android.com/switch/ " class="cta cta--is-4 " data-g-config="{ 'eventLabel': 'switch from ios', 'moduleName': 'footer', 'linkUrl': '/switch/', 'eventCategory': 'footer', 'title': 'support'}
-                            ">Switch from iOS<svg class="icon--svg cta__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://support.google.com/android/?hl=en#topic=7313011 " class="cta cta--is-4 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'android help center', 'moduleName': 'footer', 'linkUrl':
-                            'https://support.google.com/android/?hl=en#topic=7313011', 'eventCategory': 'footer', 'title': 'support'} ">Android Help Center<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.android.com/filetransfer/ " class="cta cta--is-4 " data-g-config="{ 'eventLabel': 'android file transfer', 'moduleName': 'footer', 'linkUrl': '/filetransfer/', 'eventCategory': 'footer', 'title':
-                            'support'} ">Android File Transfer<svg class="icon--svg cta__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://www.google.com/android/find?u=0 " class="cta cta--is-4 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'find my device', 'moduleName': 'footer', 'linkUrl':
-                            'https://www.google.com/android/find?u=0', 'eventCategory': 'footer', 'title': 'support'} ">Find My Device<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                        <li class="footer-default__nav-list ">
-                            <a href="https://userresearch.google.com/?l=9&amp;reserved=0&amp;pType=0&amp;productTag=andr&amp;campaignType=ghc&amp;campaignDate=jul16&amp;labelTag=0&amp;referral_code=androiddotcom " class="cta cta--is-4 " target="_blank
-                            " rel="noopener " data-g-config="{ 'eventLabel': 'join user studies', 'moduleName': 'footer', 'linkUrl':
-                            'https://userresearch.google.com/?l=9&reserved=0&pType=0&productTag=andr&campaignType=ghc&campaignDate=jul16&labelTag=0&referral_code=androiddotcom', 'eventCategory': 'footer', 'title': 'support'} ">Join User Studies<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-                        </li>
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
-        <div class="footer-default__colophon ">
-            <div class="footer-default__links ">
-                <div class="footer-default__policy ">
-                    <a href="https://policies.google.com/?hl=en&amp;gl=us " class="cta cta--is-4 " target="_blank " rel="noopener " data-g-config="{ 'eventLabel': 'privacy policy', 'moduleName': 'footer', 'linkUrl':
-                            'https://policies.google.com/?hl=en&gl=us', 'eventCategory': 'footer', 'title': 'privacy policy'} ">Privacy Policy<svg class="icon--svg cta__icon cta__external " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-large "></use>
-  </svg></a>
-
-
-
-
-
-                    <form class="language-selector " data-android-component="language-selector "> <svg class="icon--svg language-selector__globe " aria-hidden="true ">
-    <use xlink:href="#ico-globe "></use>
-  </svg>
-                        <label class="visually-hidden " for="language-selector-android-10-footer ">Languages</label>
-                        <select id="language-selector-android-10-footer " class="language-selector__select js-language-selector " aria-label="Pick a language " data-g-config="{ 'eventLabel': 'open', 'moduleName': 'footer', 'eventCategory': 'footer',
-                            'title': 'country dropdown'} ">
-        <option
- selected          class="language-selector__option "
-          value="/android-10/ "
-          data-g-config="{ 'eventLabel': 'united states', 'moduleName': 'footer', 'eventCategory': 'footer', 'title': 'country dropdown'} "
-
-        >
-        United States - English
-    </select>
-                        <svg class="icon--svg language-selector__icon " aria-hidden="true ">
-    <use xlink:href="#ico-arrow-round "></use>
-  </svg>
-
-                    </form>
-
-                    <div class="footer-default__footnote ">
-                        <p>Some features and devices may not be available in all countries. Subject to availability.</p>
-                        <p>Some features and availability vary by OEM and/or device manufacturer.</p>
-                        <p><sup>1</sup> Not all products and features shown here are currently available in Dark theme.</p>
-                        <p><sup>2</sup> Child or teen's device must be powered on, recently active, and connected to the internet.</p>
-                    </div>
-                </div>
-                <ul class="social-network ">
-                    <li class="social-network__item ">
-                        <a href="https://twitter.com/android/ " target="_blank " rel="noopener " class="social-network__link " data-g-event="site-footer-social " data-g-action="clicked " data-g-label="twitter " data-g-config="{ 'eventLabel':
-                            'social-twitter', 'moduleName': 'footer', 'linkUrl': 'https://twitter.com/android/', 'eventCategory': 'social icons', 'title': ''} ">
-                            <span class="visually-hidden "> Find Android on Twitter </span>
-                            <svg class="icon--svg social-network__icon " aria-hidden="true ">
-    <use xlink:href="#social-twitter "></use>
-  </svg>
-
-                        </a>
-                    </li>
-                    <li class="social-network__item ">
-                        <a href="https://www.instagram.com/android/ " target="_blank " rel="noopener " class="social-network__link " data-g-event="site-footer-social " data-g-action="clicked " data-g-label="instagram " data-g-config="{ 'eventLabel':
-                            'social-instagram', 'moduleName': 'footer', 'linkUrl': 'https://www.instagram.com/android/', 'eventCategory': 'social icons', 'title': ''} ">
-                            <span class="visually-hidden "> Find Android on Instagram </span>
-                            <svg class="icon--svg social-network__icon " aria-hidden="true ">
-    <use xlink:href="#social-instagram "></use>
-  </svg>
-
-                        </a>
-                    </li>
-                    <li class="social-network__item ">
-                        <a href="https://www.youtube.com/user/GoogleMobile/ " target="_blank " rel="noopener " class="social-network__link " data-g-event="site-footer-social " data-g-action="clicked " data-g-label="youtube " data-g-config="{
-                            'eventLabel': 'social-youtube', 'moduleName': 'footer', 'linkUrl': 'https://www.youtube.com/user/GoogleMobile/', 'eventCategory': 'social icons', 'title': ''} ">
-                            <span class="visually-hidden "> Find Android on YouTube </span>
-                            <svg class="icon--svg social-network__icon " aria-hidden="true ">
-    <use xlink:href="#social-youtube "></use>
-  </svg>
-
-                        </a>
-                    </li>
-                    <li class="social-network__item ">
-                        <a href="https://www.facebook.com/AndroidOfficial/ " target="_blank " rel="noopener " class="social-network__link " data-g-event="site-footer-social " data-g-action="clicked " data-g-label="facebook " data-g-config="{
-                            'eventLabel': 'social-facebook', 'moduleName': 'footer', 'linkUrl': 'https://www.facebook.com/AndroidOfficial/', 'eventCategory': 'social icons', 'title': ''} ">
-                            <span class="visually-hidden "> Find Android on Facebook </span>
-                            <svg class="icon--svg social-network__icon " aria-hidden="true ">
-    <use xlink:href="#social-facebook "></use>
-  </svg>
-
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </footer> -->
 
 
     <svg class="svg-icons " xmlns="http://www.w3.org/2000/svg ">
